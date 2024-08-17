@@ -5,6 +5,7 @@ import seaborn as sns
 import plotting_function as pf
 import numpy as np
 import os
+import pickle
 
 # Read the csv file into a pandas object
 df = pd.read_csv('synapses_toviah.csv')
@@ -122,6 +123,12 @@ class Connectome:
     def __init__(self, df, cell_types):
         self.df = df
         self.cell_types = cell_types
+        self.neurons_by_id = {}
+        self.neurons_by_type = {}
+        self.neurons_by_type_layer = {}
+
+        # Check if saved data exists
+
 
         # Give counts of pre-type and post-type unique values
         self.pre_type_counts = df['pre_type'].value_counts()
@@ -138,7 +145,12 @@ class Connectome:
 
         self.union_neuron_set = set(self.pre_neuron_ids).union(set(self.post_neuron_ids))
         self.union_neuron_set = list(self.union_neuron_set)
-        self.generate_neurons()
+        
+        if os.path.exists('neuron_data.pkl'):
+            self.load_neuron_data()
+        else:
+            self.generate_neurons()
+            self.save_neuron_data()
 
         self.neuron_groups = {}
         for type, neuron_list in self.neurons_by_type_layer.items():
@@ -147,6 +159,7 @@ class Connectome:
         self.create_weight_matrices()
 
     def generate_neurons(self):
+        print("Generating neurons...")
         self.neurons_by_id = {}
         self.neurons_by_type = {}
         self.neurons_by_type_layer = {}
@@ -169,6 +182,24 @@ class Connectome:
             
             # Append the neuron to the list for its type-layer
             self.neurons_by_type_layer[neuron.type_layer].append(neuron)
+
+    def save_neuron_data(self):
+        print("Saving neuron data...")
+        data = {
+            'neurons_by_id': self.neurons_by_id,
+            'neurons_by_type': self.neurons_by_type,
+            'neurons_by_type_layer': self.neurons_by_type_layer
+        }
+        with open('neuron_data.pkl', 'wb') as f:
+            pickle.dump(data, f)
+
+    def load_neuron_data(self):
+        print("Loading saved neuron data...")
+        with open('neuron_data.pkl', 'rb') as f:
+            data = pickle.load(f)
+        self.neurons_by_id = data['neurons_by_id']
+        self.neurons_by_type = data['neurons_by_type']
+        self.neurons_by_type_layer = data['neurons_by_type_layer']
 
     def create_weight_matrices(self):
         neuron_types = list(self.neuron_groups.keys())
@@ -265,12 +296,16 @@ class Connectome:
         os.makedirs('plots', exist_ok=True)
         plt.savefig('plots/connection_distribution.png', dpi=300, bbox_inches='tight')
         plt.close()
+        plt.tight_layout()
+        
+        # Ensure plots directory exists
+        os.makedirs('plots', exist_ok=True)
+        plt.savefig('plots/connection_distribution.png', dpi=300, bbox_inches='tight')
+        plt.close()
+        plt.close()
 
-print("len", len(df))
-# len 273840
-random_rows = df.sample(n=10000, random_state=42)
-random_rows = df
-my_connectome = Connectome(random_rows, cell_types)
+random_rows = df.sample(1000, random_state=42)
+my_connectome = Connectome(df, cell_types)
 my_connectome.plot_connection_distribution()
 my_connectome.plot_weight_matrices()
 plt.show()
