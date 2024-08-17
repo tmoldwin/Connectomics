@@ -3,8 +3,7 @@ from matplotlib import pyplot as plt
 from tabulate import tabulate
 import seaborn as sns
 import plotting_function as pf
-
-from Lichtman2024.plotting_function import dist_plot
+import numpy as np
 
 # Read the csv file into a pandas object
 df = pd.read_csv('synapses_toviah.csv')
@@ -103,11 +102,26 @@ class NeuronGroup:
         print("for type: " + self.name)
         print(self.in_means)
         print(self.out_means)
-        self.plotting()
+        #self.plotting()
     def plotting(self):
-        fig, axes = plt.subplots(1, 2)
+        fig, axes = plt.subplots(1, 2, figsize=(16, 8))
+        
+        # Input matrix plot
         pf.dist_plot(self.in_matrix, ax=axes[0])
+        axes[0].set_title(f'{self.name} - Input Connections')
+        axes[0].set_xlabel('Presynaptic Neuron Type')
+        axes[0].set_ylabel('Number of Synapses')
+        
+        # Output matrix plot
         pf.dist_plot(self.out_matrix, ax=axes[1])
+        axes[1].set_title(f'{self.name} - Output Connections')
+        axes[1].set_xlabel('Postsynaptic Neuron Type')
+        axes[1].set_ylabel('Number of Synapses')
+        
+        # Overall figure title
+        fig.suptitle(f'Connection Distribution for {self.name} Neurons (N={self.N})', fontsize=16)
+        
+        plt.tight_layout()
         plt.show()
 
 class Connectome:
@@ -135,7 +149,8 @@ class Connectome:
         self.neuron_groups = {}
         for type, neuron_list in self.neurons_by_type.items():
             self.neuron_groups[type] = NeuronGroup(type, neuron_list)
-
+        
+        self.create_weight_matrix()
 
     def generate_neurons(self):
         self.neurons_by_id = {}
@@ -147,9 +162,43 @@ class Connectome:
             self.neurons_by_id[id] = neuron
             self.neurons_by_type[neuron.neuron_type].append(neuron)
 
+    def create_weight_matrix(self):
+        neuron_types = list(self.neuron_groups.keys())
+        n_types = len(neuron_types)
+        weight_matrix = np.zeros((n_types, n_types))
+
+        for i, pre_type in enumerate(neuron_types):
+            pre_group = self.neuron_groups[pre_type]
+            for j, post_type in enumerate(neuron_types):
+                post_group = self.neuron_groups[post_type]
+                
+                # Use the mean values from NeuronGroup
+                if post_type in pre_group.out_means['Column'].values:
+                    weight = pre_group.out_means[pre_group.out_means['Column'] == post_type]['Mean'].values[0]
+                else:
+                    weight = 0
+                
+                weight_matrix[i, j] = weight
+
+        self.weight_matrix = pd.DataFrame(weight_matrix, index=neuron_types, columns=neuron_types)
+        return self.weight_matrix
+
+    def show_weight_matrix(self):
+        if not hasattr(self, 'weight_matrix'):
+            self.create_weight_matrix()
+
+        plt.figure(figsize=(12, 10))
+        sns.heatmap(self.weight_matrix, annot=True, cmap='YlOrRd', fmt='.2f')
+        plt.title('Average Number of Connections Between Neuron Types')
+        plt.xlabel('Postsynaptic Neuron Type')
+        plt.ylabel('Presynaptic Neuron Type')
+        plt.tight_layout()
+        plt.show()
+
 random_rows = df.sample(n=1000, random_state=42)
 
 my_connectome = Connectome(random_rows, cell_types)
+my_connectome.show_weight_matrix()
 # print(my_connectome.neurons_by_type)
 
 # C.1. Create a dict of all unique pre and/or post IDs, mapped to type (e.g. pyramidal neuron, layer 4)
@@ -158,4 +207,5 @@ my_connectome = Connectome(random_rows, cell_types)
 #  3. a dataframe of its input synapses 4. a dataframe of its output synapses, also both 3 and 4, filtered by where the input/output is a neuron.
 #E. Also make a dictionary with key (neuron type, neuron layer), and value is a list of neurons
 
-
+# 
+# #Next step: weight matrix - stack the mean counts on top of each other
