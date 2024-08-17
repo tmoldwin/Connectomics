@@ -93,6 +93,13 @@ class NeuronGroup:
         self.out_means= self.out_matrix.mean().reset_index()
         self.out_means.columns = ['Column', 'Mean']
 
+        self.in_sum = self.in_matrix.sum().reset_index()
+        self.in_sum.columns = ['Column', 'Sum']
+
+        self.out_sum = self.out_matrix.sum().reset_index()
+        self.out_sum.columns = ['Column', 'Sum']
+
+
         self.in_variance = self.in_matrix.var()
 
         self.out_variance = self.out_matrix.var()
@@ -203,10 +210,11 @@ class Connectome:
 
     def create_weight_matrices(self):
         neuron_types = list(self.neuron_groups.keys())
-        print(neuron_types)
         n_types = len(neuron_types)
         out_weight_matrix = np.zeros((n_types, n_types))
         in_weight_matrix = np.zeros((n_types, n_types))
+        out_sum_matrix = np.zeros((n_types, n_types))
+        in_sum_matrix = np.zeros((n_types, n_types))
 
         for i, pre_type in enumerate(neuron_types):
             pre_group = self.neuron_groups[pre_type]
@@ -219,31 +227,62 @@ class Connectome:
                 in_weight = pre_group.in_means.loc[pre_group.in_means['Column'] == post_type, 'Mean'].values
                 in_weight_matrix[i, j] = in_weight[0] if len(in_weight) > 0 else 0
 
+                # Outgoing sum
+                out_sum = pre_group.out_sum.loc[pre_group.out_sum['Column'] == post_type, 'Sum'].values
+                out_sum_matrix[i, j] = out_sum[0] if len(out_sum) > 0 else 0
+
+                # Incoming sum
+                in_sum = pre_group.in_sum.loc[pre_group.in_sum['Column'] == post_type, 'Sum'].values
+                in_sum_matrix[i, j] = in_sum[0] if len(in_sum) > 0 else 0
+
         self.out_weight_matrix = pd.DataFrame(out_weight_matrix, index=neuron_types, columns=neuron_types)
         self.in_weight_matrix = pd.DataFrame(in_weight_matrix, index=neuron_types, columns=neuron_types)
-        return self.out_weight_matrix, self.in_weight_matrix
+        self.out_sum_matrix = pd.DataFrame(out_sum_matrix, index=neuron_types, columns=neuron_types)
+        self.in_sum_matrix = pd.DataFrame(in_sum_matrix, index=neuron_types, columns=neuron_types)
 
     def plot_weight_matrices(self):
-        if not hasattr(self, 'out_weight_matrix') or not hasattr(self, 'in_weight_matrix'):
+        if not hasattr(self, 'out_sum_matrix') or not hasattr(self, 'in_sum_matrix'):
             self.create_weight_matrices()
 
         # Sort neuron types
         neuron_types = sorted(self.out_weight_matrix.index, 
                               key=lambda x: (x.split()[0], x.split()[-1]))
 
-        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(24, 10))
+        fig, axs = plt.subplots(2, 2, figsize=(24, 20))
 
+        # Calculate global min and max for each row
+        vmin_avg = min(self.out_weight_matrix.min().min(), self.in_weight_matrix.min().min())
+        vmax_avg = max(self.out_weight_matrix.max().max(), self.in_weight_matrix.max().max())
+        vmin_sum = min(self.out_sum_matrix.min().min(), self.in_sum_matrix.min().min())
+        vmax_sum = max(self.out_sum_matrix.max().max(), self.in_sum_matrix.max().max())
+
+        # Outgoing connections (pre on x-axis, post on y-axis)
         sns.heatmap(self.out_weight_matrix.loc[neuron_types, neuron_types], 
-                    annot=False, cmap='YlOrRd', fmt='.2f', ax=ax1)
-        ax1.set_title('Average Number of Outgoing Connections')
-        ax1.set_xlabel('Postsynaptic Neuron Type')
-        ax1.set_ylabel('Presynaptic Neuron Type')
+                    cmap='YlOrRd', ax=axs[0, 0], vmin=vmin_avg, vmax=vmax_avg, cbar=True, cbar_kws={'label': 'Average Outgoing'})
+        axs[0, 0].set_title('Average Number of Outgoing Connections')
+        axs[0, 0].set_xlabel('Presynaptic Neuron Type')
+        axs[0, 0].set_ylabel('Postsynaptic Neuron Type')
 
-        sns.heatmap(self.in_weight_matrix.loc[neuron_types, neuron_types], 
-                    annot=False, cmap='YlOrRd', fmt='.2f', ax=ax2)
-        ax2.set_title('Average Number of Incoming Connections')
-        ax2.set_xlabel('Presynaptic Neuron Type')
-        ax2.set_ylabel('Postsynaptic Neuron Type')
+        # Incoming connections (transpose to get pre on x-axis, post on y-axis)
+        sns.heatmap(self.in_weight_matrix.loc[neuron_types, neuron_types].T, 
+                    cmap='YlOrRd', ax=axs[0, 1], vmin=vmin_avg, vmax=vmax_avg, cbar=True, cbar_kws={'label': 'Average Incoming'})
+        axs[0, 1].set_title('Average Number of Incoming Connections')
+        axs[0, 1].set_xlabel('Presynaptic Neuron Type')
+        axs[0, 1].set_ylabel('Postsynaptic Neuron Type')
+
+        # Outgoing sum connections (pre on x-axis, post on y-axis)
+        sns.heatmap(self.out_sum_matrix.loc[neuron_types, neuron_types], 
+                    cmap='YlOrRd', ax=axs[1, 0], vmin=vmin_sum, vmax=vmax_sum, cbar=True, cbar_kws={'label': 'Total Outgoing'})
+        axs[1, 0].set_title('Total Number of Outgoing Connections')
+        axs[1, 0].set_xlabel('Presynaptic Neuron Type')
+        axs[1, 0].set_ylabel('Postsynaptic Neuron Type')
+
+        # Incoming sum connections (transpose to get pre on x-axis, post on y-axis)
+        sns.heatmap(self.in_sum_matrix.loc[neuron_types, neuron_types].T, 
+                    cmap='YlOrRd', ax=axs[1, 1], vmin=vmin_sum, vmax=vmax_sum, cbar=True, cbar_kws={'label': 'Total Incoming'})
+        axs[1, 1].set_title('Total Number of Incoming Connections')
+        axs[1, 1].set_xlabel('Presynaptic Neuron Type')
+        axs[1, 1].set_ylabel('Postsynaptic Neuron Type')
 
         plt.tight_layout()
 
@@ -259,6 +298,7 @@ class Connectome:
             for neuron in neurons:
                 incoming = neuron.in_type_counts.sum()
                 outgoing = neuron.out_type_counts.sum()
+                
                 neuron_type, layer = type_layer.split('_')
                 data.append({'type': neuron_type, 'layer': layer, 'incoming': incoming, 'outgoing': outgoing})
         
@@ -295,13 +335,6 @@ class Connectome:
         # Ensure plots directory exists
         os.makedirs('plots', exist_ok=True)
         plt.savefig('plots/connection_distribution.png', dpi=300, bbox_inches='tight')
-        plt.close()
-        plt.tight_layout()
-        
-        # Ensure plots directory exists
-        os.makedirs('plots', exist_ok=True)
-        plt.savefig('plots/connection_distribution.png', dpi=300, bbox_inches='tight')
-        plt.close()
         plt.close()
 
 random_rows = df.sample(1000, random_state=42)
