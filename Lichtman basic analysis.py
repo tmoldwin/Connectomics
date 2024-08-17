@@ -4,6 +4,7 @@ from tabulate import tabulate
 import seaborn as sns
 import plotting_function as pf
 import numpy as np
+import os
 
 # Read the csv file into a pandas object
 df = pd.read_csv('synapses_toviah.csv')
@@ -15,6 +16,7 @@ class Neuron:
         self.neuron_id = neuron_id
         self.neuron_type = None
         self.layer = None
+        self.type_layer = None
         in_df = df[df['post_seg_id'] == self.neuron_id]
         out_df = df[df['pre_seg_id'] == self.neuron_id]
         in_df_full_neuron = df[df['pre_type'].isin(cell_types)]
@@ -25,9 +27,12 @@ class Neuron:
         if len(in_df) > 0:
             self.neuron_type = in_df.iloc[0]['post_type']
             self.layer = in_df.iloc[0]['post_region']
+            self.type_layer = in_df.iloc[0]['post_type_layer']
         else:
             self.neuron_type = out_df.iloc[0]['pre_type']
             self.layer = out_df.iloc[0]['pre_region']
+            self.type_layer = out_df.iloc[0]['pre_type_layer']
+
 
     def __str__(self):
         return (
@@ -80,13 +85,6 @@ class NeuronGroup:
 
         self.in_matrix = self.in_matrix.fillna(0).astype(int).T
         self.out_matrix = self.out_matrix.fillna(0).astype(int).T
-        print(self.name, self.N)
-        print("in matrix")
-        print(self.in_matrix)
-        print(tabulate(self.in_matrix, headers='keys', tablefmt='pretty'))
-        print("out matrix")
-        print(self.out_matrix)
-
 
         self.in_means = self.in_matrix.mean().reset_index()
         self.in_means.columns  = ['Column', 'Mean']
@@ -98,10 +96,6 @@ class NeuronGroup:
 
         self.out_variance = self.out_matrix.var()
 
-
-        print("for type: " + self.name)
-        print(self.in_means)
-        print(self.out_means)
         #self.plotting()
     def plotting(self):
         fig, axes = plt.subplots(1, 2, figsize=(16, 8))
@@ -147,58 +141,140 @@ class Connectome:
         self.generate_neurons()
 
         self.neuron_groups = {}
-        for type, neuron_list in self.neurons_by_type.items():
+        for type, neuron_list in self.neurons_by_type_layer.items():
             self.neuron_groups[type] = NeuronGroup(type, neuron_list)
         
-        self.create_weight_matrix()
+        self.create_weight_matrices()
 
     def generate_neurons(self):
         self.neurons_by_id = {}
-        self.neurons_by_type = {type: [] for type in self.cell_types}
+        self.neurons_by_type = {}
+        self.neurons_by_type_layer = {}
 
         for index, id in enumerate(self.union_neuron_set):
             print(str(index) + " out of " + str(len(self.union_neuron_set)))
             neuron = Neuron(id, self.df)
             self.neurons_by_id[id] = neuron
+            
+            # Initialize the list for this neuron type if it doesn't exist
+            if neuron.neuron_type not in self.neurons_by_type:
+                self.neurons_by_type[neuron.neuron_type] = []
+            
+            # Append the neuron to the list for its type
             self.neurons_by_type[neuron.neuron_type].append(neuron)
 
-    def create_weight_matrix(self):
+            # Initialize the list for this neuron type-layer if it doesn't exist
+            if neuron.type_layer not in self.neurons_by_type_layer:
+                self.neurons_by_type_layer[neuron.type_layer] = []
+            
+            # Append the neuron to the list for its type-layer
+            self.neurons_by_type_layer[neuron.type_layer].append(neuron)
+
+    def create_weight_matrices(self):
         neuron_types = list(self.neuron_groups.keys())
+        print(neuron_types)
         n_types = len(neuron_types)
-        weight_matrix = np.zeros((n_types, n_types))
+        out_weight_matrix = np.zeros((n_types, n_types))
+        in_weight_matrix = np.zeros((n_types, n_types))
 
         for i, pre_type in enumerate(neuron_types):
             pre_group = self.neuron_groups[pre_type]
             for j, post_type in enumerate(neuron_types):
-                post_group = self.neuron_groups[post_type]
-                
-                # Use the mean values from NeuronGroup
-                if post_type in pre_group.out_means['Column'].values:
-                    weight = pre_group.out_means[pre_group.out_means['Column'] == post_type]['Mean'].values[0]
-                else:
-                    weight = 0
-                
-                weight_matrix[i, j] = weight
+                # Outgoing connections
+                out_weight = pre_group.out_means.loc[pre_group.out_means['Column'] == post_type, 'Mean'].values
+                out_weight_matrix[i, j] = out_weight[0] if len(out_weight) > 0 else 0
 
-        self.weight_matrix = pd.DataFrame(weight_matrix, index=neuron_types, columns=neuron_types)
-        return self.weight_matrix
+                # Incoming connections
+                in_weight = pre_group.in_means.loc[pre_group.in_means['Column'] == post_type, 'Mean'].values
+                in_weight_matrix[i, j] = in_weight[0] if len(in_weight) > 0 else 0
 
-    def show_weight_matrix(self):
-        if not hasattr(self, 'weight_matrix'):
-            self.create_weight_matrix()
+        self.out_weight_matrix = pd.DataFrame(out_weight_matrix, index=neuron_types, columns=neuron_types)
+        self.in_weight_matrix = pd.DataFrame(in_weight_matrix, index=neuron_types, columns=neuron_types)
+        return self.out_weight_matrix, self.in_weight_matrix
 
-        plt.figure(figsize=(12, 10))
-        sns.heatmap(self.weight_matrix, annot=True, cmap='YlOrRd', fmt='.2f')
-        plt.title('Average Number of Connections Between Neuron Types')
-        plt.xlabel('Postsynaptic Neuron Type')
-        plt.ylabel('Presynaptic Neuron Type')
+    def plot_weight_matrices(self):
+        if not hasattr(self, 'out_weight_matrix') or not hasattr(self, 'in_weight_matrix'):
+            self.create_weight_matrices()
+
+        # Sort neuron types
+        neuron_types = sorted(self.out_weight_matrix.index, 
+                              key=lambda x: (x.split()[0], x.split()[-1]))
+
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(24, 10))
+
+        sns.heatmap(self.out_weight_matrix.loc[neuron_types, neuron_types], 
+                    annot=False, cmap='YlOrRd', fmt='.2f', ax=ax1)
+        ax1.set_title('Average Number of Outgoing Connections')
+        ax1.set_xlabel('Postsynaptic Neuron Type')
+        ax1.set_ylabel('Presynaptic Neuron Type')
+
+        sns.heatmap(self.in_weight_matrix.loc[neuron_types, neuron_types], 
+                    annot=False, cmap='YlOrRd', fmt='.2f', ax=ax2)
+        ax2.set_title('Average Number of Incoming Connections')
+        ax2.set_xlabel('Presynaptic Neuron Type')
+        ax2.set_ylabel('Postsynaptic Neuron Type')
+
         plt.tight_layout()
-        plt.show()
 
-random_rows = df.sample(n=1000, random_state=42)
+        # Ensure plots directory exists
+        os.makedirs('plots', exist_ok=True)
+        plt.savefig('plots/weight_matrices.png', dpi=300, bbox_inches='tight')
+        plt.close()
 
+    def plot_connection_distribution(self):
+        # Prepare data
+        data = []
+        for type_layer, neurons in self.neurons_by_type_layer.items():
+            for neuron in neurons:
+                incoming = neuron.in_type_counts.sum()
+                outgoing = neuron.out_type_counts.sum()
+                neuron_type, layer = type_layer.split('_')
+                data.append({'type': neuron_type, 'layer': layer, 'incoming': incoming, 'outgoing': outgoing})
+        
+        df = pd.DataFrame(data)
+        
+        # Sort by neuron type and layer
+        df['type_layer'] = df['type'] + '-' + df['layer']
+        df = df.sort_values(['type', 'layer'])
+        
+        # Calculate N for each type_layer
+        type_counts = df['type_layer'].value_counts().sort_index()
+        
+        # Create labels with N
+        labels = [f"{tl}\n(N={n})" for tl, n in type_counts.items()]
+        
+        # Set up the plot
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(24, 16))
+        fig.suptitle('Distribution of Incoming and Outgoing Connections by Neuron Type-Layer', fontsize=16)
+        
+        # Plot incoming connections
+        sns.boxplot(x='incoming', y='type_layer', data=df, ax=ax1, color='lightblue')
+        ax1.set_title('Incoming Connections')
+        ax1.set_xlabel('Number of Connections')
+        ax1.set_yticklabels(labels)
+        
+        # Plot outgoing connections
+        sns.boxplot(x='outgoing', y='type_layer', data=df, ax=ax2, color='lightgreen')
+        ax2.set_title('Outgoing Connections')
+        ax2.set_xlabel('Number of Connections')
+        ax2.set_yticklabels([])  # Remove y-axis labels for the second plot
+        
+        plt.tight_layout()
+        
+        # Ensure plots directory exists
+        os.makedirs('plots', exist_ok=True)
+        plt.savefig('plots/connection_distribution.png', dpi=300, bbox_inches='tight')
+        plt.close()
+
+print("len", len(df))
+# len 273840
+random_rows = df.sample(n=10000, random_state=42)
+random_rows = df
 my_connectome = Connectome(random_rows, cell_types)
-my_connectome.show_weight_matrix()
+my_connectome.plot_connection_distribution()
+my_connectome.plot_weight_matrices()
+plt.show()
+
 # print(my_connectome.neurons_by_type)
 
 # C.1. Create a dict of all unique pre and/or post IDs, mapped to type (e.g. pyramidal neuron, layer 4)
