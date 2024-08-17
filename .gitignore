@@ -2,3 +2,4 @@ cache
 .history/
 .idea/workspace.xml
 .idea/tasks.xml
+*.history
