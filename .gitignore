@@ -3,3 +3,4 @@ cache
 .idea/workspace.xml
 .idea/tasks.xml
 *.history
+synapse_data/*
