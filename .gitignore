@@ -4,3 +4,4 @@ cache
 .idea/tasks.xml
 *.history
 synapse_data/*
+parsed_synapses/all_synapses_comprehensive.csv

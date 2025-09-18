@@ -291,6 +291,98 @@ class Connectome:
         plt.savefig('plots/weight_matrices.png', dpi=300, bbox_inches='tight')
         plt.close()
 
+    def basic_dataset_analysis(self):
+        """Perform basic analysis on the synapses_toviah dataset"""
+        print("=" * 60)
+        print("BASIC DATASET ANALYSIS - synapses_toviah.csv")
+        print("=" * 60)
+        
+        # Basic dataset info
+        print(f"Total number of synapses: {len(self.df):,}")
+        print(f"Dataset shape: {self.df.shape}")
+        print(f"Memory usage: {self.df.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
+        
+        # Unique counts
+        unique_pre_seg = self.df['pre_seg_id'].nunique()
+        unique_post_seg = self.df['post_seg_id'].nunique()
+        unique_pre_types = self.df['pre_type'].nunique()
+        unique_post_types = self.df['post_type'].nunique()
+        
+        print(f"\nUnique presynaptic segments: {unique_pre_seg:,}")
+        print(f"Unique postsynaptic segments: {unique_post_seg:,}")
+        print(f"Unique presynaptic types: {unique_pre_types}")
+        print(f"Unique postsynaptic types: {unique_post_types}")
+        
+        # Neuron counts (from identified cell types)
+        pre_neurons = self.df[self.df['pre_type'].isin(self.cell_types)]['pre_seg_id'].nunique()
+        post_neurons = self.df[self.df['post_type'].isin(self.cell_types)]['post_seg_id'].nunique()
+        total_neurons = len(self.union_neuron_set)
+        
+        print(f"\nIdentified presynaptic neurons: {pre_neurons:,}")
+        print(f"Identified postsynaptic neurons: {post_neurons:,}")
+        print(f"Total unique neurons (pre or post): {total_neurons:,}")
+        
+        # Synapse counts by type
+        print(f"\nSynapses from identified neurons: {len(self.df[self.df['pre_type'].isin(self.cell_types)]):,}")
+        print(f"Synapses to identified neurons: {len(self.df[self.df['post_type'].isin(self.cell_types)]):,}")
+        print(f"Synapses between identified neurons: {len(self.df[(self.df['pre_type'].isin(self.cell_types)) & (self.df['post_type'].isin(self.cell_types))]):,}")
+        
+        # Presynaptic type distribution
+        print(f"\nTop 10 presynaptic types:")
+        pre_type_counts = self.df['pre_type'].value_counts().head(10)
+        for ptype, count in pre_type_counts.items():
+            print(f"  {ptype}: {count:,} ({count/len(self.df)*100:.1f}%)")
+        
+        # Postsynaptic type distribution
+        print(f"\nTop 10 postsynaptic types:")
+        post_type_counts = self.df['post_type'].value_counts().head(10)
+        for ptype, count in post_type_counts.items():
+            print(f"  {ptype}: {count:,} ({count/len(self.df)*100:.1f}%)")
+        
+        # Layer distribution
+        print(f"\nPresynaptic layer distribution:")
+        pre_layer_counts = self.df['pre_region'].value_counts()
+        for layer, count in pre_layer_counts.items():
+            print(f"  {layer}: {count:,} ({count/len(self.df)*100:.1f}%)")
+        
+        print(f"\nPostsynaptic layer distribution:")
+        post_layer_counts = self.df['post_region'].value_counts()
+        for layer, count in post_layer_counts.items():
+            print(f"  {layer}: {count:,} ({count/len(self.df)*100:.1f}%)")
+        
+        # EI type distribution
+        print(f"\nExcitatory/Inhibitory type distribution:")
+        ei_counts = self.df['ei_type'].value_counts()
+        ei_labels = {1: 'Excitatory', 2: 'Inhibitory'}
+        for ei_type, count in ei_counts.items():
+            label = ei_labels.get(ei_type, f'Type {ei_type}')
+            print(f"  {label}: {count:,} ({count/len(self.df)*100:.1f}%)")
+        
+        # Structure type distribution
+        print(f"\nPresynaptic structure type distribution:")
+        pre_struc_counts = self.df['pre_struc_type'].value_counts()
+        for struc_type, count in pre_struc_counts.items():
+            print(f"  {struc_type}: {count:,} ({count/len(self.df)*100:.1f}%)")
+        
+        print(f"\nPostsynaptic structure type distribution:")
+        post_struc_counts = self.df['post_struc_type'].value_counts()
+        for struc_type, count in post_struc_counts.items():
+            print(f"  {struc_type}: {count:,} ({count/len(self.df)*100:.1f}%)")
+        
+        # Connection statistics
+        print(f"\nConnection statistics:")
+        print(f"  Average synapses per presynaptic segment: {len(self.df) / unique_pre_seg:.1f}")
+        print(f"  Average synapses per postsynaptic segment: {len(self.df) / unique_post_seg:.1f}")
+        print(f"  Average synapses per neuron (identified): {len(self.df) / total_neurons:.1f}")
+        
+        # Pair count analysis
+        print(f"\nSynapse pair count analysis:")
+        pair_counts = self.df['pair_count'].value_counts().sort_index()
+        for pair_count, freq in pair_counts.head(10).items():
+            print(f"  {pair_count} synapse(s) per pair: {freq:,} pairs ({freq/len(self.df)*100:.1f}%)")
+        
+        print("=" * 60)
+
     def plot_connection_distribution(self):
         # Prepare data
         data = []
@@ -339,6 +431,10 @@ class Connectome:
 
 random_rows = df.sample(1000, random_state=42)
 my_connectome = Connectome(df, cell_types)
+
+# Run basic dataset analysis
+my_connectome.basic_dataset_analysis()
+
 my_connectome.plot_connection_distribution()
 my_connectome.plot_weight_matrices()
 plt.show()
