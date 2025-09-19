@@ -5,3 +5,6 @@ cache
 *.history
 synapse_data/*
 parsed_synapses/all_synapses_comprehensive.csv
+neuron_synapses.db
+neuron_synapses.db-journal
+neuron_synapses_new.db
