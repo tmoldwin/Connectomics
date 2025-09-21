@@ -1,0 +1,1001 @@
+pre_seg_id,post_seg_id,ei_type,pre_struc_type,post_struc_type,pair_count,pre_region,pre_type,post_region,post_type
+42920269091,7442640755,2,axon,dendrite,1,Layer 6,pure axon fragment,White matter,excitatory/spiny neuron with atypical tree
+65223208468,39470562882,1,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,pyramidal neuron
+38116247407,29527414676,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+47784985901,12381795140,2,axon,unknown,1,Layer 3,pure axon fragment,Layer 3,astrocyte
+75155027876,3839814791,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+41465600765,6149503191,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,excitatory/spiny neuron with atypical tree
+43371148210,34056264908,2,axon,dendrite,1,White matter,pure axon fragment,White matter,pyramidal neuron
+21449643760,3282816141,2,axon,dendrite,1,Layer 4,majority axon fragment,Layer 3,pyramidal neuron
+37740460907,28453321285,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,excitatory/spiny neuron with atypical tree
+48325107440,3067451371,2,axon,dendrite,2,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+40390778046,3998878408,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+54889481746,36402558422,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+76494216455,6255244644,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+87000352275,34083641900,2,axon,dendrite,1,Layer 5,pure axon fragment,White matter,pyramidal neuron
+77877296043,42080520188,1,axon,dendrite,2,Layer 3,pure axon fragment,Layer 3,interneuron
+48223146496,39023028469,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+21001013288,3430550192,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+23942195156,4815162127,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+48995978530,31454862705,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+57642310065,30072060807,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+103250490510,32414951939,1,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+94631198778,5323992539,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+65151385048,3035665442,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+91570755701,29324271012,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+46314110364,28627043440,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,excitatory/spiny neuron with atypical tree
+45339566178,27216938221,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+6031791235,5406867213,2,axon,dendrite,1,Layer 6,majority axon fragment,Layer 5,pyramidal neuron
+5078053352,4917879656,2,axon,dendrite,2,Layer 2,majority axon fragment,Layer 2,pyramidal neuron
+84652408700,31607093858,2,axon,dendrite,1,White matter,pure axon fragment,White matter,pyramidal neuron
+3387667099,3212366365,2,axon,dendrite,2,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+35921440237,633932672,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+3576852038,3431191765,2,axon,dendrite,1,Layer 2,majority dendrite fragment,Layer 2,pyramidal neuron
+48501996631,4233006294,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+86246851487,32619030591,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+91836041517,38469971561,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+55806599979,2614630348,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+4204257214,3621588593,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+51595686414,6907280512,2,axon,dendrite,2,White matter,majority axon fragment,Layer 6,unclassified neuron
+55837451531,29256083426,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+83366541409,29533649871,2,axon,dendrite,1,Layer 1,pure axon fragment,Layer 2,pyramidal neuron
+6285686754,5907390019,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+41404656032,5840648256,1,axon,dendrite,1,White matter,pure axon fragment,White matter,excitatory/spiny neuron with atypical tree
+55090697965,28262617626,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+59196557182,5350084055,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+32159856349,4254907635,2,axon,dendrite,1,White matter,pure axon fragment,White matter,pyramidal neuron
+90976495893,3095222730,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+68837115473,51077204908,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+37798209089,4591811376,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 6,pyramidal neuron
+65487062997,3808743872,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+2688059567,1364610775,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+57437428671,4798765836,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+4970619807,4374533701,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+57596565117,3576412791,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+60144104070,6821105415,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+50593283781,4709888554,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+48908108481,4740842569,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+86117661924,50670946759,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+85718077298,6032857009,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 6,pyramidal neuron
+41713657401,5772461570,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+20666402584,2601168167,1,axon,dendrite,1,Layer 2,microglia/opc,Layer 3,pyramidal neuron
+88865351001,28931562570,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+58469034646,40709443489,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+92643887360,74142213737,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 5,pyramidal neuron
+58887045797,32232235791,1,axon,dendrite,1,White matter,pure axon fragment,White matter,excitatory/spiny neuron with atypical tree
+37885142945,3661303870,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+90114570566,63911703303,2,axon,unknown,1,Layer 3,pure axon fragment,Layer 3,unknown cell
+6206609406,6075842602,1,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,microglia/opc
+59575454037,6411635598,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,spiny stellate neuron
+2104472469,1275267033,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+28222099116,1741928933,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+90643023351,28614122339,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+37868498524,29527897053,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+59387903304,41264528830,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,interneuron
+33648181106,6892402073,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 6,pyramidal neuron
+63040870048,28597841746,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,interneuron
+93579532135,4809949027,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,spiny stellate neuron
+47418047974,30153782940,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+92009575114,3210599315,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+65136259421,3341599781,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+4546240571,3308995863,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,unclassified neuron
+22751089503,5107708499,1,axon,unknown,1,Layer 1,pure axon fragment,Layer 1,unknown cell
+59326871354,6803162381,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 6,pyramidal neuron
+37333254450,37318668413,1,axon,dendrite,1,Layer 3,majority axon fragment,Layer 2,interneuron
+85518832024,6675826193,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 5,pyramidal neuron
+47827956244,21042567391,2,axon,unknown,1,Layer 3,pure axon fragment,Layer 3,astrocyte
+14067406729,5129609835,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 6,pyramidal neuron
+50071386113,41118782646,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,unclassified neuron
+95778763884,33882950806,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,pyramidal neuron
+51755713123,42628292358,2,axon,dendrite,1,White matter,pure axon fragment,White matter,interneuron
+6077200391,5829377683,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+77774242362,51236735444,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+3050982497,2265184554,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+31758081083,5089282144,1,axon,unknown,1,Layer 4,pure axon fragment,Layer 4,astrocyte
+4142858791,3779892740,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+67685637988,4626036197,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+78338439970,5901709980,2,axon,dendrite,1,Layer 6,majority axon fragment,Layer 5,unclassified neuron
+49979982875,5319174461,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,oligodendrocyte
+50624062506,6340163853,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,pyramidal neuron
+74046358834,2744112351,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+33157265292,5703880907,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+57321132074,3619704725,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+57555857903,3796202420,1,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,pyramidal neuron
+33298268926,15480054062,2,axon,unknown,1,Layer 5,pure axon fragment,Layer 5,astrocyte
+21861144044,3650308409,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+46138109395,28567646864,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+68530364160,50901583502,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 4,interneuron
+64261221839,29309538825,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,interneuron
+47670353645,3518665873,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+21512311418,3709473336,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+58545368021,40640716750,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,interneuron
+39123498235,3778535716,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,interneuron
+41653426657,5712963875,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 5,microglia/opc
+38813897680,29977680734,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,spiny stellate neuron
+40509701998,4320129291,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+5631168046,4961405848,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+48890588134,4854307497,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,unclassified neuron
+65163037306,37897583611,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 4,pyramidal neuron
+47625660041,3269018369,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+75545779498,4753822824,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+4031234408,3856591986,2,axon,dendrite,1,Layer 1,pure axon fragment,Layer 1,interneuron
+14647052229,5243380626,2,axon,dendrite,1,White matter,pure axon fragment,White matter,pyramidal neuron
+38950300349,3327452280,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+40705603396,5389711818,1,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
+99388613512,1913504984,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+47392904879,2803815532,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+72326988805,1827184566,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+76113991736,4290271436,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,pyramidal neuron
+84718317804,4159358243,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+29760809611,3004944809,1,axon,ais,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+56069286754,37916374620,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+5586387131,5266158555,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+58470129078,6136203117,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,interneuron
+4810811540,4141223577,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+63171753098,27914265666,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+59229000667,41250206546,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+72284908060,37071152365,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+16093368616,7082289534,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+4930189136,4740419111,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+90667582238,38159421626,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,pyramidal neuron
+73406600990,2454238950,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+4909587183,4836786953,1,axon,dendrite,1,Layer 5,majority axon fragment,Layer 6,pyramidal neuron
+38364727912,29965283514,1,axon,dendrite,2,Layer 4,majority axon fragment,Layer 4,pyramidal neuron
+4546051784,39104618608,1,axon,dendrite,1,Layer 5,pyramidal neuron,Layer 5,interneuron
+103612639348,5890292881,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+71890769038,36706127864,1,axon,axon,1,Layer 3,pure axon fragment,Layer 3,microglia/opc
+40945206471,6314174393,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+59402607546,59112033058,1,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,oligodendrocyte
+81614159516,29251499540,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+998212969,925485691,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+10826277491,1858503339,1,axon,soma,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+64204013884,1826264355,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,oligodendrocyte
+37246481351,2090951917,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+73012695600,28481501135,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+63564344560,911073206,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+84151637863,22748256410,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+2670276310,2321165089,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,interneuron
+40706655219,4619362213,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,excitatory/spiny neuron with atypical tree
+68034382639,5075702217,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,pyramidal neuron
+13628865660,3498487692,1,axon,dendrite,1,Layer 6,majority axon fragment,Layer 6,pyramidal neuron
+75632188074,4491632837,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,interneuron
+92952624704,4226582094,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,unclassified neuron
+49490324049,31716688373,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+30987440366,4128856200,1,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+46941529946,3605265569,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+92754517866,4028123903,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+55458629203,1539047638,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+58615481226,6384755758,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,pyramidal neuron
+48059863278,4126111391,2,axon,dendrite,1,Layer 4,majority axon fragment,Layer 5,pyramidal neuron
+1871366711,881579396,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+92709941496,3531850525,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+71440736874,36096142042,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+90891475010,3474687797,2,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,pyramidal neuron
+48565395103,48303643727,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 5,excitatory/spiny neuron with atypical tree
+58799206239,5170126624,1,axon,dendrite,1,White matter,pure axon fragment,White matter,pyramidal neuron
+55206936820,2233383600,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+38509642618,29207418998,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,pyramidal neuron
+14024071379,4401720797,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+37859195880,1524667312,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+23302131534,6384785095,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,pyramidal neuron
+3547621043,3518491104,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+51755377733,42773558499,2,axon,soma,1,White matter,pure axon fragment,White matter,oligodendrocyte
+67877538570,6213032571,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+66981329851,31534730907,1,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,interneuron
+50521578115,6456138776,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+41819222129,33069631534,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+11875037646,2282501359,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+71469297238,35906708609,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+2396872186,1684504313,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+60056848555,32777873751,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 4,excitatory/spiny neuron with atypical tree
+1419685949,779459820,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+6642302477,6190211117,2,axon,dendrite,1,White matter,majority axon fragment,White matter,pyramidal neuron
+93187539913,4854307497,2,axon,soma,1,Layer 5,majority axon fragment,Layer 5,unclassified neuron
+55862813271,38015602699,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,oligodendrocyte
+1464203861,955067750,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+45805163196,1666982509,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+75924777210,67015889514,1,axon,soma,1,Layer 3,pure axon fragment,Layer 3,interneuron
+66489129589,3106947392,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,spiny stellate neuron
+71905033922,35833030418,1,axon,dendrite,1,Layer 3,majority axon fragment,Layer 2,pyramidal neuron
+47174211095,1857715073,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+68605616759,41485165512,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+83277432135,3707719580,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+37755924922,28919589274,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,excitatory/spiny neuron with atypical tree
+60564948927,33806149770,2,axon,dendrite,1,Layer 5,pure axon fragment,White matter,pyramidal neuron
+66740004044,4915996110,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+11985728180,2683635722,2,axon,dendrite,1,Layer 4,majority axon fragment,Layer 4,pyramidal neuron
+65344075695,30523392286,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+54873464947,28597141231,1,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+37536499292,28526136122,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+4243985810,3107998480,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,pyramidal neuron
+40728104030,31862567681,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+42718322212,33750986669,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,excitatory/spiny neuron with atypical tree
+40377592691,4989309345,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 5,pyramidal neuron
+38337378918,2745207275,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+41556054112,32443424006,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+2278661756,1710887287,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+64177688400,28745838008,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+68663831354,51005645549,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+76474461179,5464161519,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+85531885547,40477798546,1,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+58662468265,4917456198,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+42530568245,42022876868,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+74615622727,3780156036,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+85747206017,5450992548,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+66829289257,4800503033,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,oligodendrocyte
+91457452296,4011844625,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+7547856895,7445518468,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+57628498291,38602358951,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+57640324592,4680044210,1,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,pyramidal neuron
+47360855453,29717403042,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,interneuron
+2265711513,2120080725,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+2599811610,1522022884,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+605037297,517709150,2,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,unclassified neuron
+80479764668,62574441203,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+5846664113,5512666172,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+94763498930,23359833943,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+66087470071,6005303967,2,axon,dendrite,1,Layer 1,pure axon fragment,Layer 5,pyramidal neuron
+92471637724,3993184140,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+59565656752,50379978000,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+19367789228,1782855544,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+55503307412,28863682744,2,axon,dendrite,1,Layer 1,pure axon fragment,Layer 2,excitatory/spiny neuron with atypical tree
+5978248872,5832867018,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,pyramidal neuron
+29284233638,2847444326,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,interneuron
+48103521546,30503827477,1,axon,unknown,1,Layer 4,pure axon fragment,Layer 4,astrocyte
+85454938487,4808913797,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
+65315472015,4480113728,2,axon,dendrite,1,Layer 1,pure axon fragment,Layer 2,pyramidal neuron
+48878921484,4626036197,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+50700352437,42023825870,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,interneuron
+86213328049,4811789343,1,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
+85432612507,32982624862,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+67570625386,5178318516,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+57128340407,29615021127,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 4,pyramidal neuron
+3838545531,3226822404,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+19357101416,1815035994,1,axon,dendrite,1,Layer 1,pure axon fragment,Layer 2,pyramidal neuron
+94219437169,5725578457,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 6,excitatory/spiny neuron with atypical tree
+54712254145,36952533816,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+1887677242,1072605926,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+14554628292,5339936130,2,axon,dendrite,1,Layer 2,majority axon fragment,Layer 3,pyramidal neuron
+3195692346,2337533594,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+38192712912,28861170726,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+98735379229,28016210382,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+64887677447,29572181326,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,excitatory/spiny neuron with atypical tree
+49591699387,32732918048,1,axon,dendrite,2,Layer 3,pure axon fragment,Layer 6,pyramidal neuron
+54204534003,36037387291,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+40956550172,4738857025,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+60825621105,6485311589,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
+36911782284,2222228570,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+46810748398,37101127877,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,excitatory/spiny neuron with atypical tree
+37883625371,28974620445,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+3432739458,3287386454,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+3809284363,3167732034,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+23936631727,5609441675,1,axon,ais,2,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
+57173764832,4244262574,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+3387345700,3051579933,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+38426942567,38717924646,2,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,interneuron
+55647011048,1857715073,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+41597666859,32673476510,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+57161543365,4508204983,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+3762459698,2278312286,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+92223407129,92092509149,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,oligodendrocyte
+64965281498,3736498126,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+65368911851,29324898939,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,pyramidal neuron
+63693767239,37286998616,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+30257331699,2947986035,1,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,pyramidal neuron
+40828820215,5512257591,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+47141387418,29338331862,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+51004813143,42168535150,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,excitatory/spiny neuron with atypical tree
+14434811619,4231691058,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,pyramidal neuron
+59835584675,32991983239,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,interneuron
+46462777477,2135367599,1,axon,dendrite,2,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+55967868392,1539047638,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+4009085256,3965354955,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,unknown cell
+60083758465,33953035801,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 6,pyramidal neuron
+5615633172,5136427393,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+72954189688,28306625160,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+71747577198,2265184554,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+5558003291,5353779192,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+46853354363,28059706424,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+65326757930,3210599315,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+89490318340,89446706153,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+85995335388,7111023914,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 6,pyramidal neuron
+59591120962,5628189095,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+50204780439,6052435998,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+3939365976,3605148604,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+59912429716,41890912435,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,pyramidal neuron
+4489209194,4489064511,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,pyramidal neuron
+46444175394,2321165089,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+66343265673,4271742015,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,pyramidal neuron
+5075454977,4260193331,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+10096080846,678159317,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+81893665636,2644081619,1,axon,soma,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+13127730682,4378781517,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+2429066483,2792851671,2,axon,dendrite,1,Layer 1,astrocyte,Layer 1,majority dendrite fragment
+23841360741,5163745862,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+59970148563,32762673893,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+38005441782,2369583314,1,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,pyramidal neuron
+38072429888,55803095996,2,axon,dendrite,1,Layer 4,majority axon fragment,Layer 4,interneuron
+79984863795,35862656920,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+41785668259,5785530020,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+66833888067,40121432395,2,axon,dendrite,1,White matter,pure axon fragment,White matter,pyramidal neuron
+74163210643,3530638666,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+48192528516,4055384899,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,microglia/opc
+81221378201,28335768655,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+41891057652,33287390911,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+55398399773,3676255705,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+57192556339,31032951251,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+58321037694,6089143395,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 6,interneuron
+42103649649,6133062469,2,axon,dendrite,1,White matter,pure axon fragment,White matter,pyramidal neuron
+50610411027,5105108386,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+37141719046,37025319814,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+5029081704,4767284922,1,axon,soma,1,Layer 5,majority axon fragment,Layer 5,pyramidal neuron
+54556009405,1669011958,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+101062662093,2948000722,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,pyramidal neuron
+68746035056,25133184398,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,excitatory/spiny neuron with atypical tree
+38148967618,2527768955,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+102986402800,5467579212,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,pyramidal neuron
+56374082237,29472047792,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+95344282189,33140577971,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,pyramidal neuron
+73667389905,2831630365,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+64658558648,29430127169,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+4257447951,4039367300,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,unknown cell
+72809478139,30460885703,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 4,pyramidal neuron
+50023348143,4415810884,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
+38973590311,38667755799,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,microglia/opc
+3096609943,3052952620,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+36575242949,1070355700,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+77249336223,33402592211,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,interneuron
+24029392063,5963677582,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,astrocyte
+67886504415,5581378299,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,oligodendrocyte
+41309603914,5686418450,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 5,pyramidal neuron
+45703321797,27900381389,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,excitatory/spiny neuron with atypical tree
+46971199083,2805261125,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+56431887171,3356156970,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+49913198092,5337614596,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+47538185291,3342154316,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+46490810755,2484316542,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+63158524722,28104912701,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+65838625292,39111991805,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+42193869163,7169180077,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,interneuron
+75272550385,5148458629,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+46066550468,36458113873,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+67309676881,32517758373,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+11962453826,2252759090,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+83405585802,4577633882,2,axon,dendrite,1,Layer 4,majority axon fragment,Layer 4,interneuron
+62327656270,36212058432,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,unknown cell
+12063273500,2746740149,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+1305447672,985422992,2,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,interneuron
+55109300435,37319791473,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+25465371026,7604098714,1,axon,dendrite,1,White matter,pure axon fragment,White matter,astrocyte
+42119900681,33706468670,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+50480900282,5615048210,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+64862256634,2979743063,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+36970449422,1669376179,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+19313634901,1087542412,2,axon,dendrite,1,Layer 1,pure axon fragment,Layer 2,pyramidal neuron
+74436103172,30590278737,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+38525250537,29674739276,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+14904628111,5908382258,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+67305353996,40041258147,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 4,pyramidal neuron
+83099562728,3936882782,1,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+58193221283,4681051685,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+40274800315,4128345172,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+5571099898,4740842569,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+6181495247,5715897278,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+23606547094,5657551964,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 4,pyramidal neuron
+14619733421,5187545499,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
+5264785355,4814432342,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+99608388549,28684849197,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+65358530613,3474687797,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+76969186473,4707947344,2,axon,dendrite,1,Layer 6,majority axon fragment,Layer 5,pyramidal neuron
+3473987742,2877273095,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+55005618489,2366749859,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,unclassified neuron
+42614013088,33676580309,1,axon,dendrite,1,White matter,pure axon fragment,White matter,pyramidal neuron
+46621987065,1960447432,2,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,pyramidal neuron
+85866861439,33067397116,1,axon,dendrite,1,Layer 4,majority axon fragment,Layer 5,pyramidal neuron
+64263455285,2278457437,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+5520653978,5113403193,1,axon,dendrite,1,Layer 6,majority axon fragment,Layer 6,unclassified neuron
+37810722316,2291524761,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+22166684398,3794669429,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+7299668617,6513199759,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+55788173029,29352451075,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+50481396517,6213032571,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+11072319068,1668325312,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+55993448386,29048691672,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,interneuron
+67132712622,4814432342,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+39949505427,4153108523,1,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,spiny stellate neuron
+49373953856,4450384804,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+73334093098,2134783019,2,axon,dendrite,2,Layer 3,majority axon fragment,Layer 2,pyramidal neuron
+48018134694,29865193079,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,excitatory/spiny neuron with atypical tree
+4202504928,3925829338,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+41873202413,7023155288,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 6,pyramidal neuron
+38583479814,29251426700,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+48020310042,3532771118,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+5835217501,5209636816,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+47275250688,1333261412,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+72589631278,28452328063,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+65107670660,29311319609,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,pyramidal neuron
+5570545602,4626036197,2,axon,dendrite,2,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+90670766177,3006360875,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+75082387590,30086866777,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+11947093261,2440952622,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+68267399552,32529948948,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+102156817275,3997155204,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+42137143265,6820668036,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 4,pyramidal neuron
+5376746109,5290102993,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+87276675592,34026974968,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 5,pyramidal neuron
+66841364260,4798765836,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+65588408106,3138338964,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+32761156166,5641169477,1,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,interneuron
+76203393694,4029103359,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+68575014371,41906491079,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+40199474981,4708822688,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+37579062325,28698764134,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+55295797590,2278457437,1,axon,soma,2,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+39820359965,3399040143,1,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,pyramidal neuron
+72735232509,37113947425,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+58806784207,5250928624,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+39963025068,4734651673,1,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,excitatory/spiny neuron with atypical tree
+98649496611,28745179871,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+56490452408,3706288942,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+67292622325,41438691126,1,axon,unknown,1,Layer 4,majority axon fragment,Layer 4,astrocyte
+41914523238,6118125750,1,axon,dendrite,1,White matter,pure axon fragment,White matter,excitatory/spiny neuron with atypical tree
+21293032998,2819644029,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+1958418132,781768171,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+11525227443,3037548543,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+2936904149,2544093112,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+73314263802,72935878874,1,axon,soma,1,Layer 4,pure axon fragment,Layer 4,unclassified neuron
+38498954570,1712347319,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+48472153015,4362238572,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+11277024693,2149559297,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+47189601048,2339824866,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+98911773736,29343267425,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+68544117941,6938848705,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,interneuron
+76160028158,5397202146,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+65819250415,56997530540,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 4,unclassified neuron
+64178667506,2921573497,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+30376418896,3052952620,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+45617306254,1086242342,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+91516440423,3706288942,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+41500395233,32213225794,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+36967485145,28189525199,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,interneuron
+72899567637,37729205125,1,axon,dendrite,1,Layer 1,pure axon fragment,Layer 1,interneuron
+80205658801,1348928027,2,axon,dendrite,1,Layer 1,pure axon fragment,Layer 2,pyramidal neuron
+59009577568,5046909109,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,pyramidal neuron
+4680935685,4506657063,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+66884758398,4070174774,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+53739347636,27478208288,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+23443307895,5233248295,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,pyramidal neuron
+49140966436,31032251720,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,interneuron
+12398600678,3896803064,2,axon,dendrite,2,Layer 2,pure axon fragment,Layer 4,pyramidal neuron
+77092419256,59784350519,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+45561050162,27626393900,2,axon,dendrite,1,Layer 1,majority axon fragment,Layer 1,interneuron
+51033970194,32852017547,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+92973021553,22343298779,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+63756348418,28892036786,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+39971772441,39928131208,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+47742847468,2909017956,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+40547898082,5478134645,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+57796759552,4254761989,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,spiny stellate neuron
+25408383413,6717147653,1,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
+100804282317,3460743660,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+100833644555,2994504680,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+42007794288,32415448126,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+94148518592,4303207108,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+57146547662,3721708284,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+23405958777,5893577425,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+89563994898,36022887535,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+68645828663,6384842151,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,spiny stellate neuron
+36810232936,10475824258,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,excitatory/spiny neuron with atypical tree
+41062991359,33304094082,2,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,excitatory/spiny neuron with atypical tree
+14614842771,5793063586,2,axon,unknown,1,Layer 1,majority axon fragment,Layer 1,astrocyte
+93141706487,4998010245,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,microglia/opc
+94073921939,5769863307,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,excitatory/spiny neuron with atypical tree
+47335786211,2907263880,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+38863453691,3183821571,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+5640234897,4768380042,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,pyramidal neuron
+64832514770,3401348064,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+5777893963,4845941742,1,axon,dendrite,1,Layer 1,pure axon fragment,Layer 2,pyramidal neuron
+39501387070,3355689790,2,axon,dendrite,1,Layer 4,majority axon fragment,Layer 4,pyramidal neuron
+4611946312,4305923975,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+83813521843,5378381801,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,interneuron
+57206354328,39388228542,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+2892137338,2586159634,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+41816652202,40915157116,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 4,interneuron
+92868259535,4433696369,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,pyramidal neuron
+5536991646,5043507218,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+2876470617,1552920293,1,axon,dendrite,2,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+2586056309,1930502394,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+48089650483,30184429462,1,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+58683069550,41083419036,2,axon,dendrite,1,White matter,pure axon fragment,White matter,unknown cell
+31454511163,4640533920,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+16104948023,6467805051,1,axon,dendrite,1,White matter,majority axon fragment,White matter,excitatory/spiny neuron with atypical tree
+6714767618,5725578457,1,axon,dendrite,1,White matter,majority axon fragment,Layer 6,excitatory/spiny neuron with atypical tree
+66259003147,3939175098,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+46287258962,2556824934,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+63057909539,2571922378,2,axon,dendrite,1,Layer 1,pure axon fragment,Layer 2,pyramidal neuron
+103875194084,5876376889,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+93024139652,5141727580,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 6,pyramidal neuron
+95547644738,51279296827,2,axon,unknown,1,Layer 5,pure axon fragment,Layer 5,astrocyte
+82068017284,2324026603,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+41390770418,5158051474,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
+29689777312,3050310721,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+76669749053,41106736667,2,axon,unknown,1,Layer 2,pure axon fragment,Layer 2,astrocyte
+76086440435,5047536708,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+46022499184,2466780563,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+68527619597,6222230785,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,spiny stellate neuron
+74893655467,40958902530,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,interneuron
+50153165629,5768490087,2,axon,dendrite,1,White matter,pure axon fragment,White matter,unclassified neuron
+53622800717,44655173876,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,microglia/opc
+23665928882,6153271560,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+67744318412,4886488859,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+73449645430,2934086754,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+60375020023,33706468670,1,axon,soma,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+40705559869,31883957974,2,axon,dendrite,1,Layer 6,majority axon fragment,Layer 6,interneuron
+83838358282,30021410414,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+3298308626,2672174018,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+67877904215,42154592462,2,axon,dendrite,2,Layer 2,majority axon fragment,Layer 2,pyramidal neuron
+64860928003,3588736022,1,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+47902392622,3168855453,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+47305649510,3561345697,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+81835189366,2659426828,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+12487213722,3053332942,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+6517069994,6575211001,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,pyramidal neuron
+6905368352,6061941185,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
+52307820243,43457015665,2,axon,dendrite,1,White matter,pure axon fragment,White matter,interneuron
+35994606421,444864175,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+15407340612,5844196696,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+47379734197,29852389227,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+83462281229,3615455831,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,oligodendrocyte
+15479397059,4811789343,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
+29109314573,2324026603,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+40753378587,32397168198,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+31041960800,40299741127,2,axon,dendrite,1,Layer 5,pyramidal neuron,Layer 5,pure dendrite fragment
+21202608969,2483222010,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,pyramidal neuron
+76771621086,5689192061,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+39416993049,2951739644,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+50315646157,5610302956,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+3300674197,3300805575,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+41802766152,32748424027,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,interneuron
+91934015196,29730850518,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+47433759038,29731960138,1,axon,dendrite,1,Layer 4,majority axon fragment,Layer 4,interneuron
+36023267766,1216292563,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+103190801361,6065781081,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+20957560814,2834346317,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+75752966869,31716776179,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,unclassified neuron
+48704731310,30056933638,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+39950075538,2872995228,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+55105548012,28567545177,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+31073192176,4143326538,1,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,pyramidal neuron
+55005822488,2918959562,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+41948280289,6005318323,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+51223638977,32474159539,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+47129357386,2715129081,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+68103533334,6644361070,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
+4580057399,4230435380,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+82956429252,29924283155,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+66902206574,32370068278,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 4,pyramidal neuron
+84961657406,5405976475,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,excitatory/spiny neuron with atypical tree
+48295904083,3547239980,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+63928595529,2512131823,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+54002033090,1914994168,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+50042811592,6574276506,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 4,pyramidal neuron
+64673655659,29736486913,2,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,pyramidal neuron
+48745147595,4039527348,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+37027991321,36882405719,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+60259788486,6835211431,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+3853087772,3576412791,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+42094742443,6240642688,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+4638578065,4420467705,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+5057699764,3617981810,2,axon,dendrite,3,Layer 5,majority axon fragment,Layer 5,interneuron
+59706395868,33344597428,1,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,pyramidal neuron
+26939005972,26909906638,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+77136455751,32561940996,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+27302775326,895801189,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+73756617006,38935101659,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,interneuron
+20551244121,2704033285,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+37827615206,1536069641,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+93626139475,4099581193,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,pyramidal neuron
+31786275049,4986504853,2,axon,soma,1,Layer 4,pure axon fragment,Layer 4,astrocyte
+56054831289,2091491230,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+64440711599,2965390239,2,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,pyramidal neuron
+38978305616,2934086754,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+766290989,956044964,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+38456247425,2702674358,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+75051200413,3648176837,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+62941116267,1815035994,2,axon,dendrite,1,Layer 1,pure axon fragment,Layer 2,pyramidal neuron
+39939854581,22964993750,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+21974447046,3574500023,1,axon,dendrite,1,Layer 4,majority axon fragment,Layer 4,pyramidal neuron
+68803635728,33881359232,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+55430068837,37742827782,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+13752390885,4828798927,2,axon,dendrite,2,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+59520758239,6445509418,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+38992497960,31029550434,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,pyramidal neuron
+72138124399,36953569906,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+57742969181,31845731568,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,pyramidal neuron
+86739840107,6456022246,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,pyramidal neuron
+15410027742,5133347133,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+48775663935,4375671689,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+46983727112,28612501043,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+41296141713,5674707915,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+32704590244,5918005808,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,pyramidal neuron
+4856117815,4098677348,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+49532564290,32630943701,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,excitatory/spiny neuron with atypical tree
+73960724043,2688832623,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+58105878056,31568196104,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,interneuron
+94745174398,33269227364,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,spiny stellate neuron
+39075621813,30180955426,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,unclassified neuron
+87640138702,42861791193,1,axon,dendrite,1,White matter,pure axon fragment,White matter,pyramidal neuron
+86216394263,6908653613,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,excitatory/spiny neuron with atypical tree
+77857249166,33326828233,1,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
+99999533909,4517564716,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 5,interneuron
+85791447112,6440984272,1,axon,dendrite,2,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+1305082807,1275953447,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+57845205417,4376022029,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+95549046483,33287639092,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+15277464724,6440939219,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+36577229490,35878090094,2,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,pyramidal neuron
+49721560394,40695033295,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,interneuron
+89943328911,1843770501,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+65895058731,3721006522,1,axon,soma,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+5845890821,4098077865,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,astrocyte
+5847614115,5324737402,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+4751457556,4868514585,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,interneuron
+14541926005,5370612836,1,axon,dendrite,1,Layer 1,pure axon fragment,Layer 1,microglia/opc
+36618842647,29193694186,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+3867075970,2702674358,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+85935500142,6031148777,2,axon,dendrite,1,White matter,pure axon fragment,Layer 6,pyramidal neuron
+48176701443,3762867764,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+60026727411,6660174348,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+64308338379,29181720900,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+66827492917,4667925540,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+92200336206,2732066380,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+39488844361,3619704725,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+12675172665,3373210802,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+59768537819,5483902875,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+49824380822,5642439974,1,axon,dendrite,2,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+84876124671,40709443489,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+14432389031,4926903194,1,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,spiny stellate neuron
+6317166909,6229736410,1,axon,unknown,1,Layer 1,pure axon fragment,Layer 1,astrocyte
+60270168714,6889262856,1,axon,dendrite,1,White matter,pure axon fragment,White matter,excitatory/spiny neuron with atypical tree
+48600013487,31567173961,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,pyramidal neuron
+5962743088,3925829338,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,pyramidal neuron
+6717642735,6644856731,1,axon,ais,1,Layer 5,majority axon fragment,Layer 5,excitatory/spiny neuron with atypical tree
+51175031167,33648239584,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+63781038675,37185039501,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+58702737909,5423147277,1,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,pyramidal neuron
+41609010448,5345631891,1,axon,dendrite,1,Layer 6,majority axon fragment,White matter,pyramidal neuron
+54817075460,2658989242,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+41698413227,6644463791,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+55343134513,3721708284,2,axon,dendrite,1,Layer 1,pure axon fragment,Layer 3,pyramidal neuron
+72124604078,28873524291,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+73830716877,3635590602,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+42067876743,33187696504,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+6236482270,5652676074,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 6,interneuron
+48734343181,30668773752,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+58603377447,5324737402,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+74613287511,29892556984,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,pyramidal neuron
+85511487561,32232235791,2,axon,dendrite,2,White matter,majority axon fragment,White matter,excitatory/spiny neuron with atypical tree
+102112093750,4753341279,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,excitatory/spiny neuron with atypical tree
+4829091665,3518798548,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+4465424883,3533588295,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+81788466215,28480362338,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+85896938565,6938848705,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,interneuron
+6082062472,5907478137,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+81762578989,2426016106,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+56726214710,4130842009,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+62779817659,28511916007,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+76378430624,6747371726,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+15072613128,6134466306,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+85984486709,32384479041,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+50174556035,5730542838,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+62633940386,36764998073,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+5715138435,5234969589,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+73697979136,2964441917,1,axon,dendrite,2,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+40913784892,5204906123,1,axon,dendrite,2,Layer 4,majority axon fragment,Layer 4,excitatory/spiny neuron with atypical tree
+40523470405,5192875493,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+41106415244,40902557609,1,axon,soma,1,Layer 2,majority axon fragment,Layer 2,interneuron
+10837067935,2466037163,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+2266616145,1582529442,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,excitatory/spiny neuron with atypical tree
+73361703887,30242556763,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+39344571999,3329407635,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+72052650619,2730650309,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+22796163007,3653128216,2,axon,unknown,1,Layer 1,pure axon fragment,Layer 1,unknown cell
+92139669310,3442245537,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+3426256828,3047622968,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 4,interneuron
+56168923839,3645345359,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,pyramidal neuron
+16629752347,7589658232,1,axon,dendrite,1,White matter,majority axon fragment,White matter,pyramidal neuron
+65819775889,30810068715,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,excitatory/spiny neuron with atypical tree
+5579861179,5536262473,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,interneuron
+72923425331,29193694186,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+5966334702,5282057767,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+41391004034,5406867213,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 5,pyramidal neuron
+16133361626,6831633603,2,axon,dendrite,1,White matter,pure axon fragment,White matter,unclassified neuron
+54729352161,28075023123,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,excitatory/spiny neuron with atypical tree
+64237422155,2454238950,2,axon,dendrite,1,Layer 1,pure axon fragment,Layer 3,pyramidal neuron
+5657508495,4652900695,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+56515331513,4546051784,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+44873297759,36037109946,1,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,pyramidal neuron
+23507873631,4990622443,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+38630364017,3473710583,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+40286174804,4738857025,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+67744012229,6065781081,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+40911345240,4242525626,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+40316224075,31683602526,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+3721854737,4012647790,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+56141035435,3515862965,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+46895800107,2831105452,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,interneuron
+48542631999,4652653431,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+5394033538,5263136250,1,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,interneuron
+50285187463,4793654335,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 5,pyramidal neuron
+94731098363,5961748945,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+48206472413,30096751295,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+99929245396,2410070279,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+32482029459,5550234595,2,axon,dendrite,1,Layer 6,pure axon fragment,White matter,excitatory/spiny neuron with atypical tree
+51524067843,33720573626,1,axon,dendrite,2,Layer 5,majority axon fragment,Layer 5,pyramidal neuron
+84249129319,75238326428,2,axon,unknown,1,Layer 5,pure axon fragment,Layer 5,astrocyte
+36168824052,1318705082,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+20025082862,1436579124,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+5127638167,4879539319,2,axon,ais,1,Layer 6,majority axon fragment,Layer 6,astrocyte
+40743099034,31194177383,2,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,pyramidal neuron
+29868012530,3286495306,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,excitatory/spiny neuron with atypical tree
+51483871130,24713667273,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,pyramidal neuron
+75694358580,40218295373,1,axon,soma,2,Layer 2,pure axon fragment,Layer 2,interneuron
+63390957810,1842792365,2,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,pyramidal neuron
+5651902595,5214645213,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
+101007615594,3648951090,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,excitatory/spiny neuron with atypical tree
+6466958789,5870712884,2,axon,dendrite,1,White matter,majority axon fragment,White matter,pyramidal neuron
+67135136534,49666514460,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+1961134426,1102726098,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+50056609246,32354721233,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,unclassified neuron
+65907046363,3747917106,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,interneuron
+65664522957,31091050560,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+65556636918,4546329154,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,excitatory/spiny neuron with atypical tree
+46182803847,29033375099,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+77698200022,6499490334,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+59064374479,6249972672,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 6,pyramidal neuron
+54962895434,29181604125,1,axon,dendrite,2,Layer 2,pure axon fragment,Layer 3,interneuron
+92066985781,29994996547,1,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+92926503250,57406957485,1,axon,unknown,1,Layer 4,pure axon fragment,Layer 4,microglia/opc
+3153583462,2804180464,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+12166780859,2806575658,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+75510999543,31650284631,2,axon,dendrite,1,Layer 6,pure axon fragment,White matter,excitatory/spiny neuron with atypical tree
+50956731718,6544563396,1,axon,ais,3,Layer 5,majority axon fragment,Layer 5,pyramidal neuron
+41899965395,6554695529,2,axon,dendrite,1,White matter,pure axon fragment,Layer 6,pyramidal neuron
+85689633670,5189677248,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+39269478521,3691674312,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,excitatory/spiny neuron with atypical tree
+4838567160,4911602202,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,unknown cell
+39489691197,3533588295,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+58372185919,5178157228,2,axon,dendrite,1,Layer 2,majority axon fragment,Layer 3,pyramidal neuron
+91428017266,2178659288,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+63552007053,28396303652,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+81209828289,2323881190,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+47802843524,30901368474,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+50713625140,41513565003,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+55895943071,2674290017,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,unclassified neuron
+57104906263,39330642456,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+38190129261,29033563799,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+40371971647,4911602202,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,unknown cell
+47306175368,28659181017,1,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,pyramidal neuron
+57387698063,3992381078,1,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,unclassified neuron
+42164330489,7169180077,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,interneuron
+41507286035,5755262032,2,axon,dendrite,1,Layer 6,pure axon fragment,White matter,unknown cell
+22297757443,4537786412,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+63494173104,1538361362,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+53667276624,2089841238,2,axon,dendrite,1,Layer 1,pure axon fragment,Layer 3,pyramidal neuron
+13593751038,4916974842,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+10954562031,1667143659,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+73943655591,30242556763,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+4675549123,4588365131,2,axon,dendrite,2,Layer 6,majority axon fragment,Layer 6,pyramidal neuron
+91442838064,3882173260,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+56246060686,38660880666,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 1,interneuron
+72402636715,2003492425,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+15264543407,6093363551,1,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,pyramidal neuron
+1419377834,81193139470,2,axon,dendrite,1,Layer 3,pyramidal neuron,Layer 3,pure dendrite fragment
+6351595954,6337053219,1,axon,dendrite,2,Layer 6,pure axon fragment,White matter,interneuron
+41352837015,6428411825,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,pyramidal neuron
+1739914955,1143375129,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,excitatory/spiny neuron with atypical tree
+22978207189,4912682244,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+81413293438,781418178,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+82441991507,37911979774,1,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+37362353900,28060188465,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+41904637571,6938848705,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,interneuron
+84073332111,4911602202,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,unknown cell
+78353012486,7110395103,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 5,pyramidal neuron
+46968688093,1726190155,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+68050969074,6079841831,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+73011075341,1986817718,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+51076737149,24901757336,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,pyramidal neuron
+58951931877,6036535416,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+94296749130,5949089845,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+2411297848,2207701672,2,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,interneuron
+6415753514,6154016019,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,microglia/opc
+63215628325,28031103342,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+77759962566,41976722616,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,excitatory/spiny neuron with atypical tree
+6137559828,5949192875,2,axon,soma,2,Layer 4,majority axon fragment,Layer 4,interneuron
+82589345468,29368030158,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+72924373994,28437172895,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+68196307108,33521328213,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+39499064740,6015642184,2,axon,dendrite,1,Layer 5,majority axon fragment,White matter,pyramidal neuron
+42645755477,33955298955,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+68820953481,42093369868,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,interneuron
+85283025051,5597089594,1,axon,soma,3,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+63751719818,2131468614,1,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+48643539136,22469874162,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+45805469810,28670934846,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+49264432010,48303643727,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 5,excitatory/spiny neuron with atypical tree
+81136530862,46300896856,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+37900985750,2381335851,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+39373394389,4128856200,2,axon,dendrite,2,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+3722701694,3519995546,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+23930178600,5776798045,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+3970290635,3809985083,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+41404305674,4399369225,2,axon,dendrite,1,White matter,pure axon fragment,Layer 6,oligodendrocyte
+49529133721,31900484550,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+76444631417,5420709385,1,axon,dendrite,1,Layer 6,pure axon fragment,Layer 5,pyramidal neuron
+38233479301,28902141929,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,pyramidal neuron
+28117746256,36109325196,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+55706013029,2963916394,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+4705261181,3788376389,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,spiny stellate neuron
+80799496849,28204432845,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+40101692172,30537321564,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+4373789155,4242875478,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 4,excitatory/spiny neuron with atypical tree
+68935322446,6936161283,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+48571906671,4056522849,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+74543288487,2834405122,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+67991820324,6298653235,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+74062566260,29269473353,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+50088089390,33012614838,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+4825996021,13880587619,1,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+54118796805,45297180456,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+50334757436,5644250971,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+46185928291,2353330916,2,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,excitatory/spiny neuron with atypical tree
+90060034993,28191553656,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+100687737708,3445514816,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+50564797090,6150204315,1,axon,unknown,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+67185246861,3615003279,1,axon,dendrite,1,Layer 6,pure axon fragment,Layer 5,pyramidal neuron
+15423533737,5844330471,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,pyramidal neuron
+4491267796,4054493296,2,axon,dendrite,1,Layer 4,majority axon fragment,Layer 4,interneuron
+31555988709,4683431368,1,axon,dendrite,1,Layer 3,majority axon fragment,Layer 3,pyramidal neuron
+72519313590,2105961568,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+102696674519,4056522849,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+4331811312,3896758995,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,excitatory/spiny neuron with atypical tree
+66755904588,40378162071,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,interneuron
+19676089263,1625033403,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+39658508598,29730850518,1,axon,dendrite,2,Layer 5,pure axon fragment,Layer 5,interneuron
+67278094600,31860288747,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+31379477336,3970305348,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+66326664259,5606871648,2,axon,dendrite,1,Layer 5,pure axon fragment,White matter,pyramidal neuron
+40129069012,4842057459,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,excitatory/spiny neuron with atypical tree
+4961157820,4889774289,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+50670552879,42341367011,1,axon,dendrite,3,Layer 3,pure axon fragment,Layer 4,pyramidal neuron
+55867486643,3256899105,1,axon,dendrite,1,Layer 1,pure axon fragment,Layer 2,pyramidal neuron
+90072708618,1666982509,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+99901108064,2702573322,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+59725566336,42169557100,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+48456660292,3562586199,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,pyramidal neuron
+5610961218,5262799563,2,axon,dendrite,1,Layer 5,majority axon fragment,Layer 5,pyramidal neuron
+82477472503,2994504680,1,axon,dendrite,4,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+85207961753,5623693160,2,axon,dendrite,2,Layer 6,pure axon fragment,Layer 6,spiny stellate neuron
+78789025759,78774441153,1,axon,soma,1,White matter,pure axon fragment,White matter,pyramidal neuron
+47378304354,11276849363,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+13694964747,4465102907,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+40506110214,5234649530,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,pyramidal neuron
+80086996804,27739274114,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+83507559007,3720087619,1,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+5085412717,4925486793,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,unclassified neuron
+2396025750,1348928027,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 2,pyramidal neuron
+37799990330,28760131820,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+90642965245,1568352768,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+40830763067,32053082283,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+58558085407,31656603981,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+20404824940,1989124162,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+39680701663,4306799115,1,axon,dendrite,1,Layer 1,majority axon fragment,Layer 2,pyramidal neuron
+89943006950,36809473223,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+42197373630,32516310991,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,excitatory/spiny neuron with atypical tree
+50080657725,4386870830,2,axon,dendrite,1,White matter,pure axon fragment,Layer 6,pyramidal neuron
+80610749394,36240310753,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+83971578428,5172755723,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+68370643740,32355072501,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 4,pyramidal neuron
+78134404660,34259290201,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,unclassified neuron
+15308871217,5352479143,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+3284043280,2978750148,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+101803954403,4314610618,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+3251350733,3047622968,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,interneuron
+56476785532,3007515155,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+46446832904,28308113718,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+41521639303,5390865451,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
+50378999683,32778195552,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+39723556281,39155925581,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,excitatory/spiny neuron with atypical tree
+103438244983,32544651831,1,axon,dendrite,1,Layer 4,pure axon fragment,Layer 3,interneuron
+28206828020,1013805852,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+42847541160,43109351705,2,axon,dendrite,1,Layer 6,pure axon fragment,White matter,excitatory/spiny neuron with atypical tree
+68864639638,41862133128,2,axon,dendrite,1,Layer 4,majority axon fragment,Layer 4,pyramidal neuron
+65817221613,38842838827,1,axon,unknown,1,Layer 5,pure axon fragment,Layer 5,astrocyte
+83219421682,47365411399,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+15118883930,4098077865,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,astrocyte
+48816969846,4475221179,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+20476238867,2323690826,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+7385931499,7081967636,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,astrocyte
+66225056325,5200482429,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 6,oligodendrocyte
+50713698420,5892044711,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+55924240310,12237931142,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+41964369792,7112774994,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 4,pyramidal neuron
+36736278375,35922054242,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+74492551341,30370462184,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+46125641298,2889771740,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+48994562277,31321891017,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+98793272967,36357162888,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+39649981557,3852838887,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+3937788600,3530521828,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+40888000173,31556588341,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+90876244652,3140208388,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+12865715994,3811372500,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+63783652069,3864800287,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 4,pyramidal neuron
+83808471392,39903658903,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 6,pyramidal neuron
+86855568026,33459697467,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+74100279717,65162629734,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,astrocyte
+12178461363,2774950343,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+75709325625,49724582918,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+53752997890,866613333,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+93714796587,4740842569,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+37841019183,28553163055,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,excitatory/spiny neuron with atypical tree
+68457635919,32865290038,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,pyramidal neuron
+48352147058,4854496842,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 5,pyramidal neuron
+102317164875,31569129733,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 4,pyramidal neuron
+38989313359,2103144214,1,axon,soma,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+66011779215,29414285442,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+14088753519,4437725748,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+80784706374,28292155495,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+6049852391,6049954950,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,unclassified neuron
+60782897407,33269227364,1,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,spiny stellate neuron
+44771601532,36008125347,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+4422628999,4204255754,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,excitatory/spiny neuron with atypical tree
+48279551270,30825473068,1,axon,dendrite,1,Layer 4,majority axon fragment,Layer 4,interneuron
+81180714994,45966957157,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+48831847811,3907840855,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+15044754576,5483041106,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+65853431291,39694250521,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+4599592920,3653128216,2,axon,unknown,1,Layer 1,pure axon fragment,Layer 1,unknown cell
+39863461401,5116555602,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,interneuron
+82838087945,2642474626,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,pyramidal neuron
+80465264649,45105672827,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+42037784361,5615340223,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+64382365940,1975281707,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+41470156415,5178157228,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+55718424388,2060609935,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,oligodendrocyte
+47613074120,2369583314,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+37407705687,2295249495,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+65050711944,37393104713,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 2,interneuron
+46520889155,29314035227,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+42082564685,33478517677,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 3,pyramidal neuron
+59529723848,5073949710,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 5,excitatory/spiny neuron with atypical tree
+85183841250,4740842569,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+92212033423,3705078190,2,axon,dendrite,1,Layer 4,pure axon fragment,Layer 4,pyramidal neuron
+8141826685,7865179376,2,axon,unknown,1,White matter,pure axon fragment,White matter,astrocyte
+64337234400,38366640577,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,interneuron
+32153899631,5368685507,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+40349631097,31280177557,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+49715763893,4982679531,2,axon,dendrite,1,White matter,pure axon fragment,Layer 6,pyramidal neuron
+91923648855,2848626486,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+28877202026,1350125768,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+22936784723,4798531060,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 4,pyramidal neuron
+55355910419,28905543213,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,interneuron
+50262263768,5571727797,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+5614450558,4420467705,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+40437691366,4320129291,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+42210470563,6778194139,1,axon,unknown,1,Layer 4,pure axon fragment,Layer 4,astrocyte
+73781700564,5128646163,1,axon,dendrite,1,Layer 4,majority axon fragment,White matter,pyramidal neuron
+55686039027,37883449219,1,axon,dendrite,1,Layer 4,majority axon fragment,Layer 4,excitatory/spiny neuron with atypical tree
+50985262231,33880497330,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 6,excitatory/spiny neuron with atypical tree
+27099193662,18030074053,1,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,unclassified neuron
+65503809708,29956247280,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+6351771279,4722445292,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
+3862447528,3789543556,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+65036169396,2221469264,2,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+3705952940,3502576426,2,axon,dendrite,1,Layer 3,majority axon fragment,Layer 5,pyramidal neuron
+3720233435,3210599315,1,axon,dendrite,1,Layer 3,pure axon fragment,Layer 3,pyramidal neuron
+2484579295,2266411191,2,axon,dendrite,1,Layer 2,majority axon fragment,Layer 2,pyramidal neuron
+84103790318,4795962497,2,axon,dendrite,1,Layer 5,pure axon fragment,Layer 5,pyramidal neuron
+56041340296,3489493990,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+73246574792,2134783019,2,axon,dendrite,1,Layer 2,pure axon fragment,Layer 2,pyramidal neuron
+67447496029,23834819449,2,axon,dendrite,1,Layer 6,pure axon fragment,Layer 6,pyramidal neuron
