@@ -2,6 +2,7 @@ import sqlite3
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
 import os
 
 # Database path
@@ -14,6 +15,15 @@ NEURON_TYPES = {
     'excitatory/spiny neuron with atypical tree',
     'spiny stellate neuron',
     'unclassified neuron'
+}
+
+# Define consistent colors for each cell type
+CELL_TYPE_COLORS = {
+    'pyramidal neuron': '#1f77b4',  # Blue
+    'interneuron': '#ff7f0e',  # Orange
+    'excitatory/spiny neuron with atypical tree': '#2ca02c',  # Green
+    'spiny stellate neuron': '#d62728',  # Red
+    'unclassified neuron': '#9467bd'  # Purple
 }
 
 def load_indegree_data():
@@ -48,144 +58,180 @@ def load_indegree_data():
     return df
 
 def create_ei_indegree_plots(df):
-    """Create box and whisker plots with E/I breakdown"""
-    print("Creating E/I in-degree box and whisker plots...")
+    """Create KDE plots with E/I breakdown and heatmap summary"""
+    print("Creating E/I in-degree KDE plots...")
     
     os.makedirs('Plots', exist_ok=True)
     plt.style.use('default')
     
-    fig, axes = plt.subplots(2, 2, figsize=(16, 12))
-    fig.suptitle('In-Degree Analysis: Excitatory, Inhibitory, and Net', fontsize=16, fontweight='bold')
+    # Create mosaic layout with heatmap on top
+    fig = plt.figure(figsize=(20, 14))
+    gs = fig.add_gridspec(3, 4, height_ratios=[1, 2, 2], hspace=0.3, wspace=0.3)
     
-    # Plot 1: E, I, and Net in-degree by cell type
-    ax1 = axes[0, 0]
+    ax_heatmap = fig.add_subplot(gs[0, :])  # Heatmap spans full width at top
+    ax1 = fig.add_subplot(gs[1, 0:2])  # Excitatory
+    ax2 = fig.add_subplot(gs[1, 2:4])  # Inhibitory
+    ax3 = fig.add_subplot(gs[2, 0:2])  # Total
+    ax4 = fig.add_subplot(gs[2, 2:4])  # E/(E+I) ratio
     
-    # Prepare data for grouped box plots
+    fig.suptitle('In-Degree Analysis: Excitatory, Inhibitory, Total, and E/(E+I) Ratio', fontsize=16, fontweight='bold')
+    
+    # Prepare data for plots with consistent colors
     cell_types = sorted(NEURON_TYPES)
-    x_positions = np.arange(len(cell_types))
-    width = 0.25
     
-    exc_data = []
-    inh_data = []
-    net_data = []
-    labels = []
-    
+    # Create heatmap data (rows = neuron types, columns = metrics)
+    heatmap_data = []
+    cell_labels = []
     for nt in cell_types:
         if nt in df['post_type'].values:
             subset = df[df['post_type'] == nt]
-            exc_data.append(subset['excitatory_indegree'].values)
-            inh_data.append(subset['inhibitory_indegree'].values)
-            net_data.append(subset['net_indegree'].values)
-            # Clean up long labels
+            # Clean labels: remove "neuron" and shorten
+            clean_label = nt.replace(' neuron', '').replace('excitatory/spiny', 'exc/spiny').replace(' with atypical tree', '')
+            clean_label = clean_label.title()
+            cell_labels.append(clean_label)
+            heatmap_data.append([
+                len(subset),
+                subset['excitatory_indegree'].mean(),
+                subset['inhibitory_indegree'].mean(),
+                subset['total_indegree'].mean(),
+                subset['excitatory_indegree'].mean() / (subset['excitatory_indegree'].mean() + subset['inhibitory_indegree'].mean())
+            ])
+    
+    heatmap_data = np.array(heatmap_data)
+    metric_labels = ['N', 'Mean E', 'Mean I', 'Mean Total', 'E/(E+I)']
+    
+    # Normalize each metric (column) for heatmap coloring
+    heatmap_normalized = heatmap_data.copy()
+    for col in range(heatmap_normalized.shape[1]):
+        col_min = heatmap_normalized[:, col].min()
+        col_max = heatmap_normalized[:, col].max()
+        if col_max > col_min:
+            heatmap_normalized[:, col] = (heatmap_normalized[:, col] - col_min) / (col_max - col_min)
+    
+    # Plot heatmap (no transpose - rows are cell types, columns are metrics)
+    im = ax_heatmap.imshow(heatmap_normalized, cmap='YlOrRd', aspect='auto', vmin=0, vmax=1)
+    
+    # Set ticks and labels - x on top, horizontal
+    ax_heatmap.xaxis.tick_top()
+    ax_heatmap.xaxis.set_label_position('top')
+    ax_heatmap.set_xticks(np.arange(len(metric_labels)))
+    ax_heatmap.set_xticklabels(metric_labels, rotation=0, ha='center', fontsize=11, fontweight='bold')
+    ax_heatmap.set_yticks(np.arange(len(cell_labels)))
+    ax_heatmap.set_yticklabels(cell_labels, rotation=0, ha='right', fontsize=10)
+    ax_heatmap.set_title('Summary Statistics by Cell Type', fontweight='bold', pad=20, fontsize=12)
+    
+    # Annotate with actual values
+    for i in range(len(cell_labels)):
+        for j in range(len(metric_labels)):
+            if j == 0:
+                text = f'{int(heatmap_data[i, j])}'
+            elif j == 4:
+                text = f'{heatmap_data[i, j]:.3f}'
+            else:
+                text = f'{int(heatmap_data[i, j])}'
+            ax_heatmap.text(j, i, text, ha='center', va='center', 
+                          color='black' if heatmap_normalized[i, j] < 0.5 else 'white',
+                          fontweight='bold', fontsize=10)
+    
+    # Add colorbar
+    cbar = plt.colorbar(im, ax=ax_heatmap, orientation='vertical', pad=0.01, aspect=10)
+    cbar.set_label('Normalized Value', rotation=270, labelpad=15)
+    
+    # Plot 1: Excitatory in-degree KDE
+    for nt in cell_types:
+        if nt in df['post_type'].values:
+            subset = df[df['post_type'] == nt]
             clean_label = nt.replace('excitatory/spiny neuron with atypical tree', 'exc/atypical')
-            labels.append(f"{clean_label}\n(N={len(subset)})")
+            
+            # Plot excitatory KDE
+            if len(subset) > 1:
+                sns.kdeplot(data=subset, x='excitatory_indegree', ax=ax1, 
+                           color=CELL_TYPE_COLORS[nt], 
+                           label=f'{clean_label} (N={len(subset)})', 
+                           linewidth=2.5, alpha=0.8)
     
-    # Create side-by-side box plots
-    positions_exc = x_positions - width
-    positions_inh = x_positions
-    positions_net = x_positions + width
-    
-    bp1_exc = ax1.boxplot(exc_data, positions=positions_exc, widths=width*0.8, patch_artist=True, showfliers=False)
-    bp1_inh = ax1.boxplot(inh_data, positions=positions_inh, widths=width*0.8, patch_artist=True, showfliers=False)
-    bp1_net = ax1.boxplot(net_data, positions=positions_net, widths=width*0.8, patch_artist=True, showfliers=False)
-    
-    # Color the boxes
-    for patch in bp1_exc['boxes']:
-        patch.set_facecolor('red')
-        patch.set_alpha(0.7)
-    for patch in bp1_inh['boxes']:
-        patch.set_facecolor('blue')
-        patch.set_alpha(0.7)
-    for patch in bp1_net['boxes']:
-        patch.set_facecolor('white')
-        patch.set_edgecolor('black')
-        patch.set_alpha(0.9)
-    
-    ax1.set_xticks(x_positions)
-    ax1.set_xticklabels(labels, rotation=45)
-    ax1.set_title('E/I/Net In-Degree by Cell Type')
-    ax1.set_ylabel('In-Degree (Number of Synapses)')
+    ax1.set_title('Excitatory In-Degree Distribution', fontweight='bold')
+    ax1.set_xlabel('Excitatory In-Degree (Number of Synapses)')
+    ax1.set_ylabel('Density')
     ax1.grid(True, alpha=0.3)
-    ax1.legend([bp1_exc['boxes'][0], bp1_inh['boxes'][0], bp1_net['boxes'][0]], 
-              ['Excitatory', 'Inhibitory', 'Net (E-I)'], loc='upper right')
+    ax1.legend(fontsize=8, loc='upper right')
+    # Set x-axis limits starting from -1000
+    exc_mean = df['excitatory_indegree'].mean()
+    exc_std = df['excitatory_indegree'].std()
+    ax1.set_xlim(-1000, exc_mean + 3 * exc_std)
     
-    # Plot 2: Same as Plot 1 but log scale
-    ax2 = axes[0, 1]
+    # Plot 2: Inhibitory In-Degree KDE
+    for nt in cell_types:
+        if nt in df['post_type'].values:
+            subset = df[df['post_type'] == nt]
+            clean_label = nt.replace('excitatory/spiny neuron with atypical tree', 'exc/atypical')
+            
+            # Plot inhibitory KDE
+            if len(subset) > 1:
+                sns.kdeplot(data=subset, x='inhibitory_indegree', ax=ax2, 
+                           color=CELL_TYPE_COLORS[nt], 
+                           label=f'{clean_label} (N={len(subset)})', 
+                           linewidth=2.5, alpha=0.8)
     
-    # Only plot positive values for log scale (excitatory and inhibitory only)
-    bp2_exc = ax2.boxplot(exc_data, positions=positions_exc, widths=width*0.8, patch_artist=True, showfliers=False)
-    bp2_inh = ax2.boxplot(inh_data, positions=positions_inh, widths=width*0.8, patch_artist=True, showfliers=False)
-    
-    for patch in bp2_exc['boxes']:
-        patch.set_facecolor('red')
-        patch.set_alpha(0.7)
-    for patch in bp2_inh['boxes']:
-        patch.set_facecolor('blue')
-        patch.set_alpha(0.7)
-    
-    ax2.set_xticks(x_positions - width/2)
-    ax2.set_xticklabels(labels, rotation=45)
-    ax2.set_title('E/I In-Degree by Cell Type (Log Scale)')
-    ax2.set_ylabel('In-Degree (Log Scale)')
-    ax2.set_yscale('log')
+    ax2.set_title('Inhibitory In-Degree Distribution', fontweight='bold')
+    ax2.set_xlabel('Inhibitory In-Degree (Number of Synapses)')
+    ax2.set_ylabel('Density')
     ax2.grid(True, alpha=0.3)
-    ax2.legend([bp2_exc['boxes'][0], bp2_inh['boxes'][0]], 
-              ['Excitatory', 'Inhibitory'], loc='upper right')
+    ax2.legend(fontsize=8, loc='upper right')
+    # Set x-axis limits starting from -1000
+    inh_mean = df['inhibitory_indegree'].mean()
+    inh_std = df['inhibitory_indegree'].std()
+    ax2.set_xlim(-1000, inh_mean + 3 * inh_std)
     
-    # Plot 3: E/(E+I) ratio box plot
-    ax3 = axes[1, 0]
+    # Plot 3: Total In-Degree KDE
+    for nt in cell_types:
+        if nt in df['post_type'].values:
+            subset = df[df['post_type'] == nt]
+            clean_label = nt.replace('excitatory/spiny neuron with atypical tree', 'exc/atypical')
+            
+            # Plot total indegree KDE
+            if len(subset) > 1:
+                sns.kdeplot(data=subset, x='total_indegree', ax=ax3, 
+                           color=CELL_TYPE_COLORS[nt], 
+                           label=f'{clean_label} (N={len(subset)})', 
+                           linewidth=2.5, alpha=0.8)
     
+    ax3.set_title('Total In-Degree Distribution', fontweight='bold')
+    ax3.set_xlabel('Total In-Degree (Number of Synapses)')
+    ax3.set_ylabel('Density')
+    ax3.grid(True, alpha=0.3)
+    ax3.legend(fontsize=8, loc='upper right')
+    # Set x-axis limits starting from -1000
+    total_mean = df['total_indegree'].mean()
+    total_std = df['total_indegree'].std()
+    ax3.set_xlim(-1000, total_mean + 3 * total_std)
+    
+    # Plot 4: E/(E+I) ratio KDE plot
     # Calculate E/(E+I) ratio for each neuron
     df['ei_ratio'] = df['excitatory_indegree'] / (df['excitatory_indegree'] + df['inhibitory_indegree'])
     df['ei_ratio'] = df['ei_ratio'].fillna(0)  # Handle division by zero
     
-    ratio_data = []
     for nt in cell_types:
         if nt in df['post_type'].values:
             subset = df[df['post_type'] == nt]
-            ratio_data.append(subset['ei_ratio'].values)
+            clean_label = nt.replace('excitatory/spiny neuron with atypical tree', 'exc/atypical')
+            
+            # Plot E/(E+I) ratio KDE
+            if len(subset) > 1:
+                sns.kdeplot(data=subset, x='ei_ratio', ax=ax4, 
+                           color=CELL_TYPE_COLORS[nt], 
+                           label=f'{clean_label} (N={len(subset)})', 
+                           linewidth=2.5, alpha=0.8)
     
-    bp3 = ax3.boxplot(ratio_data, tick_labels=labels, patch_artist=True, showfliers=False)
-    for patch in bp3['boxes']:
-        patch.set_facecolor('lightgreen')
-        patch.set_alpha(0.7)
-    
-    ax3.set_title('E/(E+I) Ratio by Cell Type')
-    ax3.set_ylabel('E/(E+I) Ratio')
-    ax3.tick_params(axis='x', rotation=45)
-    ax3.grid(True, alpha=0.3)
-    ax3.set_ylim(0, 1)
-    
-    # Plot 4: Summary statistics table
-    ax4 = axes[1, 1]
-    ax4.axis('off')
-    
-    # Create summary statistics
-    summary_data = []
-    for nt in cell_types:
-        if nt in df['post_type'].values:
-            subset = df[df['post_type'] == nt]
-            clean_name = nt.replace('excitatory/spiny neuron with atypical tree', 'exc/atypical')[:15]
-            summary_data.append([
-                clean_name,
-                len(subset),
-                f"{subset['excitatory_indegree'].mean():.0f}",
-                f"{subset['inhibitory_indegree'].mean():.0f}",
-                f"{subset['net_indegree'].mean():.0f}",
-                f"{subset['ei_ratio'].mean():.3f}"
-            ])
-    
-    table = ax4.table(cellText=summary_data,
-                     colLabels=['Cell Type', 'N', 'Mean E', 'Mean I', 'Mean Net', 'E/(E+I)'],
-                     cellLoc='center',
-                     loc='center')
-    table.auto_set_font_size(False)
-    table.set_fontsize(10)
-    table.scale(1, 2)
-    ax4.set_title('Summary Statistics')
+    ax4.set_title('E/(E+I) Ratio Distribution', fontweight='bold')
+    ax4.set_xlabel('E/(E+I) Ratio')
+    ax4.set_ylabel('Density')
+    ax4.grid(True, alpha=0.3)
+    ax4.set_xlim(0, 1)
+    ax4.legend(fontsize=8, loc='upper left')
     
     plt.tight_layout()
-    plt.savefig('Plots/box_whisker_indegree.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Plots/kde_indegree_analysis.png', dpi=300, bbox_inches='tight')
     plt.show()
     
     # Print detailed statistics
@@ -217,7 +263,7 @@ def create_ei_indegree_plots(df):
 
 def main():
     """Main function"""
-    print("Box and Whisker Analysis of E/I In-Degree")
+    print("KDE Analysis of E/I In-Degree")
     print("=" * 50)
     
     if not os.path.exists(db_path):

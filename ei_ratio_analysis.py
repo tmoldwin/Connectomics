@@ -2,6 +2,7 @@ import sqlite3
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
 import os
 
 # Database path
@@ -14,6 +15,15 @@ NEURON_TYPES = {
     'excitatory/spiny neuron with atypical tree',
     'spiny stellate neuron',
     'unclassified neuron'
+}
+
+# Define consistent colors for each cell type (same as box_whisker_indegree.py)
+CELL_TYPE_COLORS = {
+    'pyramidal neuron': '#1f77b4',  # Blue
+    'interneuron': '#ff7f0e',  # Orange
+    'excitatory/spiny neuron with atypical tree': '#2ca02c',  # Green
+    'spiny stellate neuron': '#d62728',  # Red
+    'unclassified neuron': '#9467bd'  # Purple
 }
 
 def calculate_ei_ratio_fast():
@@ -79,76 +89,74 @@ def create_ei_plots(df):
     fig, axes = plt.subplots(2, 2, figsize=(16, 12))
     fig.suptitle('E/(E+I) Ratio Analysis by Cell Type and Layer', fontsize=16, fontweight='bold')
     
-    # Plot 1: Box plot by cell type
+    # Plot 1: KDE plot by cell type
     ax1 = axes[0, 0]
-    box_data = []
-    box_labels = []
     
     for nt in sorted(NEURON_TYPES):
         if nt in df_valid['post_type'].values:
-            data = df_valid[df_valid['post_type'] == nt]['ei_ratio'].values
-            if len(data) > 0:
-                box_data.append(data)
+            subset = df_valid[df_valid['post_type'] == nt]
+            if len(subset) > 1:
                 # Clean up long labels
                 clean_label = nt.replace('excitatory/spiny neuron with atypical tree', 'exc/atypical')
-                box_labels.append(f"{clean_label}\n(N={len(data)})")
+                sns.kdeplot(data=subset, x='ei_ratio', ax=ax1, 
+                           color=CELL_TYPE_COLORS[nt], 
+                           label=f"{clean_label} (N={len(subset)})", 
+                           linewidth=2.5, alpha=0.8)
     
-    bp1 = ax1.boxplot(box_data, tick_labels=box_labels, patch_artist=True, showfliers=False)
-    for patch in bp1['boxes']:
-        patch.set_facecolor('lightblue')
-        patch.set_alpha(0.7)
-    
-    ax1.set_title('E/(E+I) Ratio by Cell Type')
-    ax1.set_ylabel('E/(E+I) Ratio')
-    ax1.tick_params(axis='x', rotation=45)
+    ax1.set_title('E/(E+I) Ratio Distribution by Cell Type', fontweight='bold')
+    ax1.set_xlabel('E/(E+I) Ratio')
+    ax1.set_ylabel('Density')
     ax1.grid(True, alpha=0.3)
-    ax1.set_ylim(0, 1)
+    ax1.set_xlim(0, 1)
+    ax1.legend(fontsize=8, loc='upper left')
     
-    # Plot 2: Box plot by type-layer combinations (top 12 by count)
+    # Plot 2: KDE plot by type-layer combinations (top 8 by count for clarity)
     ax2 = axes[0, 1]
-    type_layer_counts = df_valid['type_layer'].value_counts().head(12)
+    type_layer_counts = df_valid['type_layer'].value_counts().head(8)
     
-    tl_data = []
-    tl_labels = []
-    for tl in type_layer_counts.index:
-        data = df_valid[df_valid['type_layer'] == tl]['ei_ratio'].values
-        tl_data.append(data)
-        # Clean up labels
-        clean_label = tl.replace('excitatory/spiny neuron with atypical tree', 'exc/atyp').replace(' - ', '\n')
-        tl_labels.append(f"{clean_label}\n(N={len(data)})")
+    colors_tl = plt.cm.Set3(np.linspace(0, 1, len(type_layer_counts)))
     
-    bp2 = ax2.boxplot(tl_data, tick_labels=tl_labels, patch_artist=True, showfliers=False)
-    for patch in bp2['boxes']:
-        patch.set_facecolor('lightgreen')
-        patch.set_alpha(0.7)
+    for idx, tl in enumerate(type_layer_counts.index):
+        data = df_valid[df_valid['type_layer'] == tl]['ei_ratio']
+        if len(data) > 1:
+            # Clean up labels
+            clean_label = tl.replace('excitatory/spiny neuron with atypical tree', 'exc/atyp')
+            data.plot.kde(ax=ax2, color=colors_tl[idx], 
+                         label=f"{clean_label} (N={len(data)})", 
+                         linewidth=2, alpha=0.7)
     
-    ax2.set_title('E/(E+I) Ratio by Type-Layer')
-    ax2.set_ylabel('E/(E+I) Ratio')
-    ax2.tick_params(axis='x', rotation=45)
+    ax2.set_title('E/(E+I) Ratio Distribution by Type-Layer (Top 8)', fontweight='bold')
+    ax2.set_xlabel('E/(E+I) Ratio')
+    ax2.set_ylabel('Density')
     ax2.grid(True, alpha=0.3)
-    ax2.set_ylim(0, 1)
+    ax2.set_xlim(0, 1)
+    ax2.legend(fontsize=7, loc='upper left')
     
-    # Plot 3: Excitatory vs Inhibitory cell classes
+    # Plot 3: Excitatory vs Inhibitory cell classes KDE
     ax3 = axes[1, 0]
-    exc_data = df_valid[df_valid['cell_class'] == 'Excitatory']['ei_ratio'].values
-    inh_data = df_valid[df_valid['cell_class'] == 'Inhibitory']['ei_ratio'].values
-    other_data = df_valid[df_valid['cell_class'] == 'Other']['ei_ratio'].values
+    exc_data = df_valid[df_valid['cell_class'] == 'Excitatory']['ei_ratio']
+    inh_data = df_valid[df_valid['cell_class'] == 'Inhibitory']['ei_ratio']
+    other_data = df_valid[df_valid['cell_class'] == 'Other']['ei_ratio']
     
-    class_data = [exc_data, inh_data, other_data]
-    class_labels = [f'Excitatory\n(N={len(exc_data)})', 
-                   f'Inhibitory\n(N={len(inh_data)})', 
-                   f'Other\n(N={len(other_data)})']
+    if len(exc_data) > 1:
+        sns.kdeplot(data=df_valid[df_valid['cell_class'] == 'Excitatory'], x='ei_ratio', 
+                   ax=ax3, color='red', label=f'Excitatory (N={len(exc_data)})', 
+                   linewidth=3, alpha=0.7)
+    if len(inh_data) > 1:
+        sns.kdeplot(data=df_valid[df_valid['cell_class'] == 'Inhibitory'], x='ei_ratio', 
+                   ax=ax3, color='blue', label=f'Inhibitory (N={len(inh_data)})', 
+                   linewidth=3, alpha=0.7)
+    if len(other_data) > 1:
+        sns.kdeplot(data=df_valid[df_valid['cell_class'] == 'Other'], x='ei_ratio', 
+                   ax=ax3, color='gray', label=f'Other (N={len(other_data)})', 
+                   linewidth=3, alpha=0.7)
     
-    bp3 = ax3.boxplot(class_data, tick_labels=class_labels, patch_artist=True, showfliers=False)
-    colors = ['lightcoral', 'lightsteelblue', 'lightgray']
-    for patch, color in zip(bp3['boxes'], colors):
-        patch.set_facecolor(color)
-        patch.set_alpha(0.7)
-    
-    ax3.set_title('E/(E+I) Ratio: Excitatory vs Inhibitory Cells')
-    ax3.set_ylabel('E/(E+I) Ratio')
+    ax3.set_title('E/(E+I) Ratio: Excitatory vs Inhibitory Cells', fontweight='bold')
+    ax3.set_xlabel('E/(E+I) Ratio')
+    ax3.set_ylabel('Density')
     ax3.grid(True, alpha=0.3)
-    ax3.set_ylim(0, 1)
+    ax3.set_xlim(0, 1)
+    ax3.legend(fontsize=10)
     
     # Plot 4: Distribution histogram with class separation
     ax4 = axes[1, 1]
